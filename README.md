@@ -1,6 +1,6 @@
 # Cordova Mobile Starter
 
-:rabbit: A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS..
+:rabbit: A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS.
 
 [![dependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter)
 [![devDependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/dev-status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter?type=dev)
@@ -19,20 +19,17 @@ $ cd <PROJECT_NAME>
 2. Install Dependencies
 
 ```bash
-$ npm install
-$ npm install cordova -g
+$ yarn install
 ```
 
 3. Download PhoneGap
 
-[Go to download](http://phonegap.com/products/#desktop-app-section)
-
-Download PhoneGap Desktop and PhoneGap Developer App
+Download [PhoneGap Desktop (Desktop App)](http://phonegap.com/products/#desktop-app-section) and [PhoneGap Developer App (Mobile App)](https://phonegap.com/products/#mobile-app-section)
 
 4. Watch the Application
 
 ```bash
-$ npm start
+$ yarn start
 ```
 
 5. Open a new terminal
@@ -40,7 +37,8 @@ $ npm start
 6. Add the Platform
 
 ```bash
-$ cordova platform add android
+$ yarn cordova platform add android
+$ yarn cordova platform add ios
 ```
 
 7. Open the PhoneGap Desktop
@@ -54,13 +52,13 @@ $ cordova platform add android
 11. Build the Application
 
 ```bash
-$ npm run prod
+$ yarn build
 
 # then
 
-$ cordova build android --debug
-
+$ yarn cordova build android --debug
+$ yarn cordova build ios --debug
 # or
-
-$ cordova build android --release
+$ yarn cordova build android --release
+$ yarn cordova build ios --release
 ```

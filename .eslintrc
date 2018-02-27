@@ -1,46 +1,36 @@
 {
+  "plugins": [],
   "env": {
     "browser": true,
     "node": true,
     "commonjs": true,
     "es6": true,
-    "jasmine": true,
-    "protractor": true
+    "jest": true
   },
-  "globals": {
-    "page": true
-  },
-  "extends": "eslint:recommended",
+  "globals": {},
+  "extends": "airbnb-base",
   "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module"
   },
   "rules": {
+    // Plugins
+    "import/prefer-default-export": "off",
+
     // Possible Errors
-    "no-console": "off",
-    "no-extra-parens": "off",
-    "no-prototype-builtins": "error",
-    "no-template-curly-in-string": "off",
-    "valid-jsdoc": "error",
 
     // Best Practices
-    "no-alert": "error",
-    "no-caller": "error",
 
     // Variables
 
+    // no-restricted-globals
+
     // Node.js and CommonJS
-    "callback-return": "error",
 
     // Stylistic Issues
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "no-underscore-dangle": "off"
 
     // JS.Next
-    "arrow-spacing": ["error"],
-    "no-useless-constructor": "error",
-    "no-var": "error",
-    "prefer-template": "error",
-    "symbol-description": "error",
-    "template-curly-spacing": ["error", "never"],
-    "yield-star-spacing": ["error", "after"]
   }
 }

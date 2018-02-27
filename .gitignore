@@ -3,3 +3,4 @@ platforms
 plugins
 www
 *.log
+*.cache
