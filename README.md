@@ -5,7 +5,7 @@
 [![dependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter)
 [![devDependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/dev-status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter?type=dev)
 
-[Android APK](https://github.com/Shyam-Chen/Cordova-Mobile-Starter/raw/master/android-debug.apk) | iOS IPA | Windows XAP
+Android APK | iOS IPA | Windows XAP
 
 ## Getting Started
 

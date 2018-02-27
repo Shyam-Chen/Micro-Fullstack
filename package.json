@@ -4,7 +4,8 @@
   "description": "A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS..",
   "scripts": {
     "start": "concurrently --kill-others \"parcel src/index.html -d www\"",
-    "build": "parcel build src/index.html --public-url /www"
+    "build": "parcel build src/index.html --public-url /www",
+    "cordova": "cordova"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Shyam-Chen/Cordova-Mobile-Starter#readme",
   "dependencies": {
+    "cordova": "8.0.0",
     "material-components-web": "0.31.0"
   },
   "devDependencies": {
