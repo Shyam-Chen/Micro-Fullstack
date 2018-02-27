@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS..",
   "scripts": {
-    "start": "concurrently --kill-others \"parcel src/index.html -d www\" \"electron .\"",
+    "start": "concurrently --kill-others \"parcel src/index.html -d www\"",
     "build": "parcel build src/index.html --public-url /www"
   },
   "repository": {
