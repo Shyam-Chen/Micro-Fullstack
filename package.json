@@ -1,5 +1,5 @@
 {
-  "name": "Cordova-Mobile-Starter",
+  "name": "Cordova-Phonegap-Starter",
   "version": "1.0.0",
   "description": "A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS..",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shyam-Chen/Cordova-Mobile-Starter.git"
+    "url": "git+https://github.com/Shyam-Chen/Cordova-Phonegap-Starter.git"
   },
   "keywords": [
     "Cordova"
@@ -17,17 +17,17 @@
   "author": "Yen-cheng Chen, 陳彥澄",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Shyam-Chen/Cordova-Mobile-Starter/issues"
+    "url": "https://github.com/Shyam-Chen/Cordova-Phonegap-Starter/issues"
   },
-  "homepage": "https://github.com/Shyam-Chen/Cordova-Mobile-Starter#readme",
+  "homepage": "https://github.com/Shyam-Chen/Cordova-Phonegap-Starter#readme",
   "dependencies": {
-    "cordova": "8.0.0",
     "material-components-web": "0.31.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.2",
     "babel-preset-env": "1.6.1",
     "concurrently": "3.5.1",
+    "cordova": "8.0.0",
     "cssnano": "3.10.0",
     "eslint": "4.18.1",
     "eslint-config-airbnb": "16.1.0",

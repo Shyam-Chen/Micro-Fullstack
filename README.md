@@ -1,9 +1,9 @@
-# Cordova Mobile Starter
+# Cordova Phonegap Starter
 
 :rabbit: A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS.
 
-[![dependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter)
-[![devDependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter/dev-status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Mobile-Starter?type=dev)
+[![dependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter/status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter)
+[![devDependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter/dev-status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter?type=dev)
 
 Android APK | iOS IPA | Windows XAP
 
@@ -12,7 +12,7 @@ Android APK | iOS IPA | Windows XAP
 1. Clone this Boilerplate
 
 ```bash
-$ git clone --depth 1 https://github.com/Shyam-Chen/Cordova-Mobile-Starter.git <PROJECT_NAME>
+$ git clone --depth 1 https://github.com/Shyam-Chen/Cordova-Phonegap-Starter.git <PROJECT_NAME>
 $ cd <PROJECT_NAME>
 ```
 
