@@ -457,6 +457,12 @@ alphanum-sort@^1.0.0, alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
 
+android-versions@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/android-versions/-/android-versions-1.3.0.tgz#ce6f3eae2e165ce4ed49b89beb68014741093044"
+  dependencies:
+    semver "^5.4.1"
+
 ansi-escapes@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
@@ -1306,6 +1312,10 @@ bplist-parser@0.1.1, bplist-parser@^0.1.0:
   dependencies:
     big-integer "^1.6.7"
 
+bplist-parser@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/bplist-parser/-/bplist-parser-0.0.6.tgz#38da3471817df9d44ab3892e27707bbbd75a11b9"
+
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2037,11 +2047,41 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
+cordova-android@6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/cordova-android/-/cordova-android-6.4.0.tgz#54ae8da5728a8d7e5efcc6172d3dcca17bc7fe7d"
+  dependencies:
+    android-versions "^1.2.1"
+    cordova-common "^2.1.0"
+    elementtree "0.1.6"
+    nopt "^3.0.1"
+    properties-parser "^0.2.3"
+    q "^1.4.1"
+    shelljs "^0.5.3"
+
 cordova-app-hello-world@^3.11.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/cordova-app-hello-world/-/cordova-app-hello-world-3.12.0.tgz#270e06b67b2ae94bcfee6592ed39eb42303d186f"
 
-cordova-common@^2.2.0:
+cordova-common@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-common/-/cordova-common-2.1.0.tgz#bb357ee1b9825031ed9db3c56b592efe973d1640"
+  dependencies:
+    ansi "^0.3.1"
+    bplist-parser "^0.1.0"
+    cordova-registry-mapper "^1.1.8"
+    elementtree "0.1.6"
+    glob "^5.0.13"
+    minimatch "^3.0.0"
+    osenv "^0.1.3"
+    plist "^1.2.0"
+    q "^1.4.1"
+    semver "^5.0.1"
+    shelljs "^0.5.3"
+    underscore "^1.8.3"
+    unorm "^1.3.3"
+
+cordova-common@^2.1.0, cordova-common@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/cordova-common/-/cordova-common-2.2.1.tgz#7009bc591729caa7285a588cfd6a7b54cd834f0c"
   dependencies:
@@ -2081,6 +2121,19 @@ cordova-fetch@^1.3.0:
     q "^1.4.1"
     shelljs "^0.7.0"
 
+cordova-ios@4.5.4:
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/cordova-ios/-/cordova-ios-4.5.4.tgz#c80648058972968570dc15da97314ff92d07dfe7"
+  dependencies:
+    cordova-common "2.1.0"
+    ios-sim "^6.1.2"
+    nopt "^3.0.6"
+    plist "^1.2.0"
+    q "^1.4.1"
+    shelljs "^0.5.3"
+    xcode "^0.9.0"
+    xml-escape "^1.1.0"
+
 cordova-js@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/cordova-js/-/cordova-js-4.2.2.tgz#a7eb20911e6a59f15ac64e7db6ec543df31c2f92"
@@ -2116,6 +2169,10 @@ cordova-lib@8.0.0:
     unorm "1.4.1"
     valid-identifier "0.0.1"
     xcode "^1.0.0"
+
+cordova-plugin-whitelist@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.3.3.tgz#b5e85ecdbbfe5aeded40a1bf4ee2372e67d96fb4"
 
 cordova-registry-mapper@^1.1.8:
   version "1.1.15"
@@ -3785,6 +3842,15 @@ invariant@^2.2.0, invariant@^2.2.2:
   dependencies:
     loose-envify "^1.0.0"
 
+ios-sim@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/ios-sim/-/ios-sim-6.1.2.tgz#7b9df7c35abd5b9d4c014248174e8b9e5b97ecc4"
+  dependencies:
+    bplist-parser "^0.0.6"
+    nopt "1.0.9"
+    plist "^1.2.0"
+    simctl "^1.1.1"
+
 ipaddr.js@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.6.0.tgz#e3fa357b773da619f26e95f049d055c72796f86b"
@@ -4808,6 +4874,12 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
+nopt@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/nopt/-/nopt-1.0.9.tgz#3bc0d7cba7bfb0d5a676dbed7c0ebe48a4fd454e"
+  dependencies:
+    abbrev "1"
+
 nopt@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.1.tgz#bce5c42446a3291f47622a370abbf158fbbacbfd"
@@ -4821,7 +4893,7 @@ nopt@4.0.1, nopt@^4.0.1:
     abbrev "1"
     osenv "^0.1.4"
 
-nopt@~3.0.1:
+nopt@^3.0.1, nopt@^3.0.6, nopt@~3.0.1:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
   dependencies:
@@ -6210,6 +6282,10 @@ properties-parser@0.3.1:
   dependencies:
     string.prototype.codepointat "^0.2.0"
 
+properties-parser@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/properties-parser/-/properties-parser-0.2.3.tgz#f7591255f707abbff227c7b56b637dbb0373a10f"
+
 proto-list@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
@@ -7033,6 +7109,10 @@ shelljs@0.3.0, shelljs@0.3.x:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.3.0.tgz#3596e6307a781544f591f37da618360f31db57b1"
 
+shelljs@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.2.6.tgz#90492d72ffcc8159976baba62fb0f6884f0c3378"
+
 shelljs@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.5.3.tgz#c54982b996c76ef0c1e6b59fbdc5825f5b713113"
@@ -7052,6 +7132,13 @@ sigmund@^1.0.1, sigmund@~1.0.0:
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simctl@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/simctl/-/simctl-1.1.1.tgz#e26cc3c04e662250b4457b5b4c48cc12484f3814"
+  dependencies:
+    shelljs "^0.2.6"
+    tail "^0.4.0"
 
 simple-plist@^0.2.1:
   version "0.2.1"
@@ -7531,6 +7618,10 @@ table@^4.0.1:
     lodash "^4.17.4"
     slice-ansi "1.0.0"
     string-width "^2.1.1"
+
+tail@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/tail/-/tail-0.4.0.tgz#d29de72750cc99db1e053aff13c359ecfb713002"
 
 tar-pack@^3.4.0:
   version "3.4.1"
@@ -8063,6 +8154,14 @@ x-is-string@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/x-is-string/-/x-is-string-0.1.0.tgz#474b50865af3a49a9c4657f05acd145458f77d82"
 
+xcode@^0.9.0:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/xcode/-/xcode-0.9.3.tgz#910a89c16aee6cc0b42ca805a6d0b4cf87211cf3"
+  dependencies:
+    pegjs "^0.10.0"
+    simple-plist "^0.2.1"
+    uuid "3.0.1"
+
 xcode@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/xcode/-/xcode-1.0.0.tgz#e1f5b1443245ded38c180796df1a10fdeda084ec"
@@ -8076,6 +8175,10 @@ xdg-basedir@^2.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-2.0.0.tgz#edbc903cc385fc04523d966a335504b5504d1bd2"
   dependencies:
     os-homedir "^1.0.0"
+
+xml-escape@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/xml-escape/-/xml-escape-1.1.0.tgz#3904c143fa8eb3a0030ec646d2902a2f1b706c44"
 
 xml@1.0.0:
   version "1.0.0"
