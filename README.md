@@ -2,6 +2,10 @@
 
 :rabbit: A boilerplate for Cordova, Material, Parcel, Babel, PostHTML, and PostCSS.
 
+| Windows (AppVeyor) | macOS (Travis CI) | Linux (CircleCI) |
+|:------------------:|:-----------------:|:----------------:|
+|                    |                   |                  |
+
 [![dependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter/status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter)
 [![devDependencies Status](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter/dev-status.svg)](https://david-dm.org/Shyam-Chen/Cordova-Phonegap-Starter?type=dev)
 
