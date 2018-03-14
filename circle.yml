@@ -1,0 +1,14 @@
+version: 2
+
+jobs:
+
+  build:
+    docker:
+      - image: circleci/android:api-25-alpha
+
+    working_directory: ~/Cordova-Phonegap-Starter
+
+    steps:
+      - checkout
+
+      - setup_remote_docker
