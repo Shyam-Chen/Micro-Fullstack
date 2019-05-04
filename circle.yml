@@ -2,13 +2,18 @@ version: 2
 
 jobs:
 
-  build:
+  build-test-deploy:
     docker:
-      - image: circleci/android:api-25-alpha
+      - image: circleci/node:10
 
-    working_directory: ~/Cordova-Phonegap-Starter
+    working_directory: ~/GraphQL-Stack
 
     steps:
       - checkout
-
       - setup_remote_docker
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build-test-deploy
