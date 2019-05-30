@@ -1,0 +1,48 @@
+import { join } from 'path';
+import express from 'express';
+import helmet from 'helmet';
+import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import compression from 'compression';
+import morgan from 'morgan';
+import session from 'express-session';
+import connectRedis from 'connect-redis';
+import rendertron from 'rendertron-middleware';
+import history from 'express-history-api-fallback';
+import Raven from 'raven';
+
+import routes from '~/core/rest';
+import apolloServer from '~/core/graphql';
+import passport from '~/core/passport';
+import redis from '~/core/redis';
+
+import { NODE_ENV, SECRET, RATE_LIMIT, SENTRY_DSN, STATIC_FILES, RENDERTRON_URL } from './env';
+
+const app = express();
+
+if (NODE_ENV === 'production') Raven.config(SENTRY_DSN).install();
+
+app.use(helmet());
+app.use(cors());
+app.use(rateLimit({ max: Number(RATE_LIMIT), windowMs: 15 * 60 * 1000 }));
+app.use(compression());
+app.use(morgan('tiny'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(session({
+  store: new (connectRedis(session))({ client: redis }),
+  name: 'sid',
+  resave: true,
+  saveUninitialized: true,
+  secret: SECRET,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+if (NODE_ENV === 'production') app.use(Raven.requestHandler());
+
+apolloServer.applyMiddleware({ app, path: '/__/graphql' });
+
+if (NODE_ENV === 'production') app.use(Raven.errorHandler());
+
+export default app;
