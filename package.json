@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "",
-    "build": "",
-    "lint": "eslint 'src/**/*.js'",
-    "unit": "jest \"src/.*\\.js$\" --coverage --forceExit",
-    "e2e": "jest \"src/.*\\.js$\" --forceExit",
+    "start:ui": "webpack",
+    "build:ui": "webpack",
+    "lint:ui": "eslint 'src/**/*.js'",
+    "unit:ui": "jest \"src/.*\\.js$\" --coverage --forceExit",
+    "e2e:ui": "jest \"src/.*\\.js$\" --forceExit",
+    "start:api": "webpack",
+    "build:api": "webpack",
+    "lint:api": "eslint 'src/**/*.js'",
+    "unit:api": "jest \"src/.*\\.js$\" --coverage --forceExit",
+    "e2e:api": "jest \"src/.*\\.js$\" --forceExit",
     "_codecov": "codecov"
   },
   "repository": {
@@ -17,7 +22,7 @@
   "author": "Shyam Chen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {}

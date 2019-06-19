@@ -27,5 +27,3 @@ server.listen(Number(PORT), HOST, () => {
   redis.on('connect', () => console.log(chalk.hex('#009688')(' [*] Redis: Connection Succeeded.')));
   redis.on('error', err => console.error(err));
 });
-
-export default server;
