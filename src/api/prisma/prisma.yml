@@ -1,0 +1,10 @@
+endpoint: ${env:PRISMA_ENDPOINT}
+
+datamodel:
+  - ./datamodel.gql
+
+secret: ${env:PRISMA_SECRET}
+
+generate:
+  - generator: client
+    output: ./client
