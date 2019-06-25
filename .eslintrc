@@ -1,6 +1,7 @@
 {
   "extends": [
-    "airbnb-base"
+    "airbnb-base",
+    "prettier"
   ],
   "env": {
     "node": true,
@@ -13,9 +14,11 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": [],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
-    "no-console": 0
+    "prettier/prettier": "error"
   },
   "settings": {}
 }
