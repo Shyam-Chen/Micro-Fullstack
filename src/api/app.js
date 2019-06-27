@@ -46,3 +46,5 @@ apolloServer.applyMiddleware({ app, path: '/__/graphql' });
 if (NODE_ENV === 'production') app.use(Raven.errorHandler());
 
 export default app;
+
+console.log();
