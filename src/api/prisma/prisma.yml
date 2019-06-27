@@ -3,8 +3,10 @@ endpoint: ${env:PRISMA_ENDPOINT}
 datamodel:
   - ./datamodel.gql
 
+databaseType: document
+
 secret: ${env:PRISMA_SECRET}
 
 generate:
-  - generator: client
-    output: ./client
+  - generator: javascript-client
+    output: ../core/prisma-client
