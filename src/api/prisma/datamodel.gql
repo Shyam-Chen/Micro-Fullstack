@@ -1,5 +1,0 @@
-type Text {
-  id: ID! @unique
-  text: String!
-  createdAt: DateTime!
-}

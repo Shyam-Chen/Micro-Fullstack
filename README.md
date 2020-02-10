@@ -1,3 +1,3 @@
-# GraphQL Stack
+# Micro Fullstack
 
 :construction: Work in Progress!
