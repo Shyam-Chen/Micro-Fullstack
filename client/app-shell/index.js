@@ -52,6 +52,12 @@ registerMicroApps(
       render: ({ appContent, loading }) => render({ appContent, loading, blank: true }),
       activeRule: genActiveRule('/world'),
     },
+    {
+      name: 'vue starter',
+      entry: '//localhost:8003',
+      render: ({ appContent, loading }) => render({ appContent, loading, blank: true }),
+      activeRule: genActiveRule('/vue-starter'),
+    }
   ],
   {
     beforeLoad: [
