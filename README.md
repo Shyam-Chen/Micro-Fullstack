@@ -2,9 +2,8 @@
 
 ## [Front-end](./client/README.md)
 
-* Single SPA
-* QianKun
+* [Single SPA](https://single-spa.js.org/)
 
 ## [Back-end](./server/README.md)
 
-* Kong Gateway
+* [Kong Gateway](https://konghq.com/kong/)

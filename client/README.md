@@ -2,11 +2,32 @@
 
 ## Steps
 
-1. [ ] Create an Application Shell (`app-shell`)
-2. [ ] Create a basic pilet (`app-foo`)
-3. [ ] Create another basic pilet (`app-bar`)
+1. [x] Create an Application Shell (`app-shell`, created by `parcel`)
+2. [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
+3. [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
 
-### Vue
+## Getting Started
+
+### Quick Start
+
+```sh
+$ git clone https://github.com/Shyam-Chen/Micro-Fullstack
+$ cd Micro-Fullstack
+
+$ cd client
+$ yarn install
+
+$ yarn install-all
+$ yarn serve-all
+```
+
+Visit [http://localhost:8000/](http://localhost:8000/).
+
+`app-shell` is listening on port 8000.<br>
+`app-foo` is listening on port 8001.<br>
+`app-bar` is listening on port 8002.
+
+### Create your own basic pilet with Webpack using [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
 
 ```sh
 $ git clone https://github.com/Shyam-Chen/Vue-Starter
@@ -24,17 +45,14 @@ $ yarn install
 ```diff
 // webpack.config.js
 
-- entry: ['./main.js'],
-+ entry: './main.js',
-
   output: {
 -   path: DISTRIBUTION_ROOT,
 -   filename: prod ? '[name].[hash].js' : '[name].js',
 -   chunkFilename: prod ? '[id].[chunkhash].js' : '[name].js',
--   publicPath: '/',
 +   library: `${pkg.name}-[name]`,
 +   libraryTarget: 'umd',
 +   jsonpFunction: `webpackJsonp_${pkg.name}`,
+    publicPath: '/',
   },
 
   devServer: {
@@ -78,17 +96,19 @@ sync(store, router);
 
 - register();
 
-+ let instance = null;
++ let vm = null;
 
 + function render() {
-+   instance = new Vue({
++   vm = new Vue({
 +     router,
 +     store,
 +     vuetify,
 +     apolloProvider,
 +     i18n,
 +     render: handle => handle('router-view'),
-+   }).$mount('#root');
++   });
+
++   vm.$mount('#root');
 
 +   register();
 + }
@@ -107,8 +127,8 @@ sync(store, router);
 + }
 
 + export async function unmount() {
-+   instance.$destroy();
-+   instance = null;
++   vm.$destroy();
++   vm = null;
 + }
 ```
 
