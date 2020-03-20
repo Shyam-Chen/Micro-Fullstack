@@ -10,8 +10,7 @@
         <nav>
           <ol>
             <li><a @click="goto('hello app', '/hello')">hello</a></li>
-            <li><a @click="goto('world app', '/world')">world</a></li>
-            <li><a @click="goto('vue starter', '/vue-starter')">vue starter</a></li>
+            <li><a @click="goto('world app', '/world')">world (Blank Page)</a></li>
           </ol>
         </nav>
       </header>
@@ -24,7 +23,7 @@
 
 <script>
 export default {
-  name: 'framework',
+  name: 'Render',
   props: {
     blank: Boolean,
     loading: Boolean,

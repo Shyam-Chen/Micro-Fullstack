@@ -6,6 +6,14 @@
 2. [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
 3. [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
 
+* [ ] `react`, created by `create-react-app`
+* [ ] `angular`, created by `angular-cli`
+* [ ] `svelte`, created by `parcel` and `parcel-plugin-svelte`
+* [ ] `vue-starter`, created by `webpack`
+* [ ] `react-starter`, created by `webpack`
+* [ ] `angular-starter`, created by `webpack`
+* [ ] `svelte-starter`, created by `webpack`
+
 ## Getting Started
 
 ### Quick Start
@@ -17,8 +25,8 @@ $ cd Micro-Fullstack
 $ cd client
 $ yarn install
 
-$ yarn install-all
-$ yarn serve-all
+$ yarn install:all
+$ yarn serve:all
 ```
 
 Visit [http://localhost:8000/](http://localhost:8000/).

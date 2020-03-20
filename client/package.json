@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "install-all": "concurrently \"yarn install:shell\" \"yarn install:foo\" \"yarn install:bar\"",
-    "serve-all": "concurrently \"yarn serve:shell\" \"yarn serve:foo\" \"yarn serve:bar\"",
+    "install:all": "concurrently \"yarn install:shell\" \"yarn install:foo\" \"yarn install:bar\"",
+    "serve:all": "concurrently \"yarn serve:shell\" \"yarn serve:foo\" \"yarn serve:bar\"",
     "install:shell": "cd app-shell && yarn install",
     "install:foo": "cd app-foo && yarn install",
     "install:bar": "cd app-bar && yarn install",
