@@ -2,17 +2,22 @@
 
 ## Steps
 
-1. [x] Create an Application Shell (`app-shell`, created by `parcel`)
-2. [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
-3. [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
-
-* [ ] `react`, created by `create-react-app`
-* [ ] `angular`, created by `angular-cli`
-* [ ] `svelte`, created by `parcel` and `parcel-plugin-svelte`
-* [ ] `vue-starter`, created by `webpack`
-* [ ] `react-starter`, created by `webpack`
-* [ ] `angular-starter`, created by `webpack`
-* [ ] `svelte-starter`, created by `webpack`
+- [x] Create an Application Shell (`app-shell`, created by `parcel`)
+  - [x] Vue render
+  - [ ] React render
+  - [ ] Angular render
+  - [ ] Svelte render
+- [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
+- [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
+- [ ] Create your own basic pilet
+  - [x] `vue`, created by `vue-cli`
+  - [ ] `react`, created by `create-react-app`
+  - [ ] `angular`, created by `angular-cli`
+  - [ ] `svelte`, created by `parcel` and `parcel-plugin-svelte`
+  - [ ] `vue-starter`, created by `webpack`
+  - [ ] `react-starter`, created by `webpack`
+  - [ ] `angular-starter`, created by `webpack`
+  - [ ] `svelte-starter`, created by `webpack`
 
 ## Getting Started
 
