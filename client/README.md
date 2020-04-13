@@ -13,7 +13,6 @@
   - [x] `vue`, created by `vue-cli`
   - [ ] `react`, created by `create-react-app`
   - [ ] `angular`, created by `angular-cli`
-  - [ ] `svelte`, created by `parcel` and `parcel-plugin-svelte`
   - [ ] `vue-starter`, created by `webpack`
   - [ ] `react-starter`, created by `webpack`
   - [ ] `angular-starter`, created by `webpack`

@@ -29,6 +29,12 @@ registerMicroApps(
       render: ({ appContent, loading }) => render({ appContent, loading, blank: true }),
       activeRule: genActiveRule('/world'),
     },
+    {
+      name: 'svelte-webpack',
+      entry: '//localhost:9000',
+      render,
+      activeRule: genActiveRule('/svelte-webpack'),
+    },
   ],
   {
     beforeLoad: [

@@ -11,6 +11,7 @@
           <ol>
             <li><a @click="goto('hello app', '/hello')">hello</a></li>
             <li><a @click="goto('world app', '/world')">world (Blank Page)</a></li>
+            <li><a @click="goto('svelte-webpack', '/svelte-webpack')">svelte-webpack</a></li>
           </ol>
         </nav>
       </header>
