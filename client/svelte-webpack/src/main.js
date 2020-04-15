@@ -28,6 +28,6 @@ export async function mount(props) {
 }
 
 export async function unmount() {
-  // vm.destroy();
+  vm.$destroy();
   vm = null;
 }
