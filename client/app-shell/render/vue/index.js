@@ -1,33 +1,24 @@
-import Vue from 'vue';
+import Vue from 'vue/dist/vue.esm';
 
 import Render from './Render.vue';
 
 let app = null;
 
-export default ({ appContent, loading, blank }) => {
+export default ({ appContent, loading }) => {
   if (!app) {
     app = new Vue({
       el: '#container',
       data() {
-        return {
-          content: appContent,
-          loading,
-          blank,
-        };
+        return { appContent, loading };
       },
       render(h) {
         return h(Render, {
-          props: {
-            content: this.content,
-            loading: this.loading,
-            blank: this.blank,
-          },
+          props: { appContent, loading }
         });
       },
     });
   } else {
-    app.content = appContent;
+    app.appContent = appContent;
     app.loading = loading;
-    app.blank = blank;
   }
 };

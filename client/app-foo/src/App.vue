@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <nav>
+      <ul>
+        <li><a @click="goto('hello app', '/hello')">hello</a></li>
+        <li><a @click="goto('world app', '/world')">world (Blank Page)</a></li>
+        <!-- <li><a @click="goto('svelte-webpack', '/svelte-webpack')">svelte-webpack</a></li> -->
+      </ul>
+    </nav>
+
     <div id="nav">
       <router-link to="/">Home~</router-link>
       |
@@ -19,7 +27,12 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  methods: {
+    goto(title, href) {
+      window.history.pushState({}, title, href);
+    },
+  },
 }
 </script>
 

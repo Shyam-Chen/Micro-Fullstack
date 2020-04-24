@@ -1,24 +1,8 @@
 <template>
-  <div>
-    <template v-if="blank">
-      <div v-if="loading">loading</div>
-      <div class="appContainer" v-html="content">content</div>
-    </template>
-
-    <template v-if="!blank">
-      <header class="header">
-        <nav>
-          <ol>
-            <li><a @click="goto('hello app', '/hello')">hello</a></li>
-            <li><a @click="goto('world app', '/world')">world (Blank Page)</a></li>
-            <li><a @click="goto('svelte-webpack', '/svelte-webpack')">svelte-webpack</a></li>
-          </ol>
-        </nav>
-      </header>
-
-      <div v-if="loading">loading</div>
-      <div class="appContainer" v-html="content">content</div>
-    </template>
+  <div class="render">
+    <div v-if="loading">loading</div>
+    <div id="subapp-viewport"></div>
+    <div v-html="content">content</div>
   </div>
 </template>
 
@@ -26,16 +10,14 @@
 export default {
   name: 'Render',
   props: {
-    blank: Boolean,
     loading: Boolean,
     content: String,
-  },
-  methods: {
-    goto(title, href) {
-      window.history.pushState({}, title, href);
-    },
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.render {
+  background: pink;
+}
+</style>

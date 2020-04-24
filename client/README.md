@@ -1,5 +1,27 @@
 # Front-end
 
+## Concept
+
+- Micro Applications
+
+```
+app-shell
+  app-foo
+  app-bar
+```
+
+- Micro Components
+
+Implement Web Components:
+
+```html
+<app-header></app-header>
+<app-nav></app-nav>
+<app-footer></app-footer>
+```
+
+Create a Web Component in Svelte
+
 ## Steps
 
 - [x] Create an Application Shell (`app-shell`, created by `parcel`)
