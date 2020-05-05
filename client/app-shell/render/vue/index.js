@@ -7,7 +7,7 @@ let app = null;
 export default ({ appContent, loading }) => {
   if (!app) {
     app = new Vue({
-      el: '#container',
+      el: '#container-2',
       data() {
         return { appContent, loading };
       },

@@ -139,7 +139,7 @@ sync(store, router);
 +     vuetify,
 +     apolloProvider,
 +     i18n,
-+     render: handle => handle('router-view'),
++     render: h => h(App),
 +   });
 
 +   vm.$mount('#root');

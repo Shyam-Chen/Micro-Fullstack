@@ -7,22 +7,22 @@ import {
   runAfterFirstMounted,
 } from 'qiankun';
 
-import render from './render/vue';
+// import render from './render/vue';
 
-render({ loading: true });
+// render({ loading: true });
 
 registerMicroApps(
   [
     {
       name: 'hello app',
       entry: '//localhost:8001',
-      container: '#subapp-viewport',
+      container: '#container',
       activeRule: '/hello',
     },
     {
       name: 'world app',
       entry: '//localhost:8002',
-      container: '#subapp-viewport',
+      container: '#container',
       activeRule: '/world',
     },
     // {
