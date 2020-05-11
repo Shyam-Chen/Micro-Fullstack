@@ -5,7 +5,7 @@
 - Micro Applications
 
 ```
-app-shell
+app-gateway
   app-foo
   app-bar
 ```
@@ -24,21 +24,9 @@ Create a Web Component in Svelte
 
 ## Steps
 
-- [x] Create an Application Shell (`app-shell`, created by `parcel`)
-  - [x] Vue render
-  - [ ] React render
-  - [ ] Angular render
-  - [ ] Svelte render
+- [x] Create an Application Gateway (`app-gateway`, created by `parcel`)
 - [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
 - [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
-- [ ] Create your own basic pilet
-  - [x] `vue`, created by `vue-cli`
-  - [ ] `react`, created by `create-react-app`
-  - [ ] `angular`, created by `angular-cli`
-  - [ ] `vue-starter`, created by `webpack`
-  - [ ] `react-starter`, created by `webpack`
-  - [ ] `angular-starter`, created by `webpack`
-  - [ ] `svelte-starter`, created by `webpack`
 
 ## Getting Started
 
@@ -57,7 +45,7 @@ $ yarn serve:all
 
 Visit [http://localhost:8000/](http://localhost:8000/).
 
-`app-shell` is listening on port 8000.<br>
+`app-gateway` is listening on port 8000.<br>
 `app-foo` is listening on port 8001.<br>
 `app-bar` is listening on port 8002.
 
@@ -123,7 +111,7 @@ sync(store, router);
 -   vuetify,
 -   apolloProvider,
 -   i18n,
--   render: handle => handle('router-view'),
+-   render: h => h(App),
 - });
 
 - vm.$mount('#root');

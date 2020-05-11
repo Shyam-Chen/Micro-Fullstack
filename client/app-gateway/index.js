@@ -1,4 +1,3 @@
-import 'normalize.css/normalize.css';
 import {
   registerMicroApps,
   initGlobalState,
@@ -6,10 +5,6 @@ import {
   start,
   runAfterFirstMounted,
 } from 'qiankun';
-
-// import render from './render/vue';
-
-// render({ loading: true });
 
 registerMicroApps(
   [
@@ -25,12 +20,6 @@ registerMicroApps(
       container: '#container',
       activeRule: '/world',
     },
-    // {
-    //   name: 'svelte-webpack',
-    //   entry: '//localhost:9000',
-    //   render,
-    //   activeRule: '/svelte-webpack',
-    // },
   ],
   // {
   //   beforeLoad: [
@@ -52,7 +41,7 @@ registerMicroApps(
 );
 
 // const { onGlobalStateChange, setGlobalState } = initGlobalState({
-//   user: 'qiankun',
+//   user: 'micro',
 // });
 
 // onGlobalStateChange((value, prev) => {

@@ -1,0 +1,17 @@
+{
+  "name": "app-gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel index.html --port 8000"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "qiankun": "^2.0.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
