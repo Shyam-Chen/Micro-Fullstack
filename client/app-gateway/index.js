@@ -11,13 +11,13 @@ registerMicroApps(
     {
       name: 'hello app',
       entry: '//localhost:8001',
-      container: '#container',
+      container: '#app-root',
       activeRule: '/hello',
     },
     {
       name: 'world app',
       entry: '//localhost:8002',
-      container: '#container',
+      container: '#app-root',
       activeRule: '/world',
     },
   ],

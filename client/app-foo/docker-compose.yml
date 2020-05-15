@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  caddy:
+    image: caddy
+    ports:
+      - "80:8000"
+      - "443:443"

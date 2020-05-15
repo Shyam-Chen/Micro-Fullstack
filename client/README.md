@@ -41,6 +41,7 @@ $ yarn install
 
 $ yarn install:all
 $ yarn serve:all
+$ yarn build:all
 ```
 
 Visit [http://localhost:8000/](http://localhost:8000/).

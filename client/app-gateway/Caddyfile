@@ -1,0 +1,8 @@
+80
+
+root /dist
+file_server
+
+header {
+  Access-Control-Allow-Origin *
+}
