@@ -47,4 +47,8 @@ module.exports = {
       jsonpFunction: `webpackJsonp_${name}`,
     },
   },
+
+  chainWebpack: config => {
+    config.module.rules.delete('eslint');
+  },
 };

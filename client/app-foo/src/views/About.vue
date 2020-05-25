@@ -2,6 +2,8 @@
   <div class="about">
     <h1>This is an about page</h1>
     <span class="dynamic">dynamic span color</span>
+
+    <app-header></app-header>
   </div>
 </template>
 
@@ -10,3 +12,11 @@
     color: green;
   }
 </style>
+
+<script>
+import '../../../components/dist/header/Header.js';
+
+export default {
+
+};
+</script>
