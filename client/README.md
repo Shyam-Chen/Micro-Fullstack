@@ -2,21 +2,21 @@
 
 ## Concept
 
-- Micro Applications
+- Applications
 
 ```
 app-gateway
   app-foo
   app-bar
+app-components
 ```
 
-- Micro Components
+- Components
 
 Implement Web Components:
 
 ```html
 <app-header></app-header>
-<app-nav></app-nav>
 <app-footer></app-footer>
 ```
 
@@ -39,9 +39,10 @@ $ cd Micro-Fullstack
 $ cd client
 $ yarn install
 
-$ yarn install:all
-$ yarn serve:all
-$ yarn build:all
+$ sh run.sh --install
+$ sh run.sh --serve
+
+$ sh run.sh --build
 ```
 
 Visit [http://localhost:8000/](http://localhost:8000/).

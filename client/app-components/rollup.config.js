@@ -24,7 +24,6 @@ const cpnConfig = (file) => ({
       dedupe: ['svelte'],
     }),
     commonjs(),
-    // !production && livereload('public'),
     production && terser(),
   ],
   watch: {

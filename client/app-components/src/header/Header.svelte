@@ -7,6 +7,7 @@ export let title = 'Title';
 <style>
 .title {
   color: pink;
+  font-size: 5rem;
 }
 </style>
 

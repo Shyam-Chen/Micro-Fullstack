@@ -14,9 +14,7 @@
 </style>
 
 <script>
-import '../../../components/dist/header/Header.js';
+import '@cpn/header/Header';
 
-export default {
-
-};
+export default {};
 </script>

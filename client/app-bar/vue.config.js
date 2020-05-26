@@ -38,6 +38,7 @@ module.exports = {
     resolve: {
       alias: {
         '@': resolve('src'),
+        '@cpn': resolve('../app-components/dist'),
       },
     },
     output: {

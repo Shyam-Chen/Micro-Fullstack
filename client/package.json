@@ -2,18 +2,6 @@
   "name": "client",
   "version": "1.0.0",
   "scripts": {
-    "install:all": "concurrently \"yarn install:gateway\" \"yarn install:foo\" \"yarn install:bar\"",
-    "serve:all": "concurrently \"yarn serve:gateway\" \"yarn serve:foo\" \"yarn serve:bar\"",
-    "build:all": "concurrently \"yarn build:gateway\" \"yarn build:foo\" \"yarn build:bar\"",
-    "install:gateway": "cd app-gateway && yarn install",
-    "install:foo": "cd app-foo && yarn install",
-    "install:bar": "cd app-bar && yarn install",
-    "serve:gateway": "cd app-gateway && yarn serve",
-    "serve:foo": "cd app-foo && yarn serve",
-    "serve:bar": "cd app-bar && yarn serve",
-    "build:gateway": "cd app-gateway && yarn build",
-    "build:foo": "cd app-foo && yarn build",
-    "build:bar": "cd app-bar && yarn build",
     "concurrently": "concurrently"
   },
   "license": "MIT",
