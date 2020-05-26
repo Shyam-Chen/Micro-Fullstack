@@ -1,7 +1,8 @@
+import path from 'path';
 import svelte from 'rollup-plugin-svelte';
+import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -10,7 +11,7 @@ const cpnConfig = (file) => ({
   input: `src/${file}.svelte`,
   output: {
     sourcemap: true,
-    format: 'iife',
+    format: 'esm',
     name: 'app',
     file: `dist/${file}.js`,
   },
@@ -18,6 +19,9 @@ const cpnConfig = (file) => ({
     svelte({
       customElement: true,
       dev: !production,
+    }),
+    getBabelOutputPlugin({
+      configFile: path.resolve(__dirname, 'babel.config.js'),
     }),
     resolve({
       browser: true,
@@ -34,4 +38,5 @@ const cpnConfig = (file) => ({
 export default [
   { ...cpnConfig('header/Header') },
   { ...cpnConfig('footer/Footer') },
+  // { ...cpnConfig('') },
 ];

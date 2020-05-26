@@ -1,7 +1,15 @@
 <svelte:options tag="app-header"></svelte:options>
 
 <script>
+import { createEventDispatcher } from 'svelte';
+
 export let title = 'Title';
+
+const dispatch = createEventDispatcher();
+
+function sayHello() {
+  dispatch('message', { text: 'Hello!' });
+}
 </script>
 
 <style>
@@ -12,3 +20,4 @@ export let title = 'Title';
 </style>
 
 <div class="title">{title}</div>
+<button on:click={sayHello}>Click Me</button>

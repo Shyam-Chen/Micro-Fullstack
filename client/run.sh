@@ -27,7 +27,10 @@ do
         "cd app-bar && yarn build"
       ;;
     *)
-      echo "usage: [-i install] | [-s serve] | [-b build]"
+      echo "unknown option: $arg"
+      echo "usage: sh run.sh [-i | --install]"
+      echo "                 [-s | --serve]"
+      echo "                 [-b | --build]"
       exit 1
       ;;
   esac
