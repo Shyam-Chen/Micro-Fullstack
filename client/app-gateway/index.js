@@ -10,13 +10,13 @@ registerMicroApps(
   [
     {
       name: 'hello app',
-      entry: '//localhost:8001',
+      entry: process.env.ENTRY_FOO,
       container: '#app-root',
       activeRule: '/hello',
     },
     {
       name: 'world app',
-      entry: '//localhost:8002',
+      entry: process.env.ENTRY_BAR,
       container: '#app-root',
       activeRule: '/world',
     },

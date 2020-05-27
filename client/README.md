@@ -27,6 +27,7 @@ Create a Web Component in Svelte
 - [x] Create an Application Gateway (`app-gateway`, created by `parcel`)
 - [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
 - [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
+- [x] Create Web Components (`app-components`, created by `rollup`)
 
 ## Getting Started
 

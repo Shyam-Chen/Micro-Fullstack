@@ -2,8 +2,8 @@
   <div id="app">
     <nav>
       <ul>
-        <li><a @click="goto('hello app', '/hello')">hello</a></li>
-        <li><a @click="goto('world app', '/world')">world (Blank Page)</a></li>
+        <li><div class="link" @click="goto('hello app', '/hello')">Foo</div></li>
+        <li><div class="link" @click="goto('world app', '/world')">Bar</div></li>
       </ul>
     </nav>
 
@@ -36,4 +36,7 @@ export default {
 </script>
 
 <style scoped>
+.link {
+  color: blue;
+}
 </style>
