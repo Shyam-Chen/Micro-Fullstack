@@ -38,7 +38,7 @@ module.exports = {
     resolve: {
       alias: {
         '@': resolve('src'),
-        '@cpn': resolve('../app-components/dist'),
+        '~': resolve('../app-components/dist'),
       },
     },
     output: {
@@ -47,5 +47,8 @@ module.exports = {
       libraryTarget: 'umd',
       jsonpFunction: `webpackJsonp_${name}`,
     },
+  },
+  chainWebpack: config => {
+    config.module.rules.delete('eslint');
   },
 };

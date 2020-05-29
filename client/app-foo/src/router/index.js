@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+
+import Home from '@/views/Home.vue';
 
 Vue.use(VueRouter);
 
@@ -21,7 +22,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  base: window.__POWERED_BY_QIANKUN__ ? '/hello' : '/',
+  base: window.__POWERED_BY_QIANKUN__ ? '/foo' : '/',
   mode: 'history',
   routes,
 });

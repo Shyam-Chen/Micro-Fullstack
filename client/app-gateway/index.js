@@ -9,16 +9,16 @@ import {
 registerMicroApps(
   [
     {
-      name: 'hello app',
+      name: 'foo app',
       entry: process.env.ENTRY_FOO,
       container: '#app-root',
-      activeRule: '/hello',
+      activeRule: '/foo',
     },
     {
-      name: 'world app',
+      name: 'bar app',
       entry: process.env.ENTRY_BAR,
       container: '#app-root',
-      activeRule: '/world',
+      activeRule: '/bar',
     },
   ],
   // {
@@ -55,7 +55,7 @@ registerMicroApps(
 //   },
 // });
 
-setDefaultMountApp('/hello');
+setDefaultMountApp('/foo');
 
 start();
 

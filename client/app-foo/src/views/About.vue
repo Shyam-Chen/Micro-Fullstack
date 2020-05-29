@@ -15,7 +15,7 @@
 </style>
 
 <script>
-import '@cpn/header/Header';
+import '~/header/Header';
 
 export default {
   data() {

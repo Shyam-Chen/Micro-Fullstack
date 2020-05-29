@@ -2,17 +2,18 @@
   <div id="app">
     <nav>
       <ul>
-        <li><div class="link" @click="goto('hello app', '/hello')">Foo</div></li>
-        <li><div class="link" @click="goto('world app', '/world')">Bar</div></li>
+        <li><div class="link" @click="push('/foo')">Foo</div></li>
+        <li><div class="link" @click="push('/bar')">Bar</div></li>
       </ul>
     </nav>
-    <img alt="Vue logo" src="./assets/logo.png">
+
+    <img alt="Vue logo" src="@/assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'App',
@@ -20,8 +21,8 @@ export default {
     HelloWorld
   },
   methods: {
-    goto(title, href) {
-      window.history.pushState({}, title, href);
+    push(location) {
+      window.history.pushState({}, '', location);
     },
   },
 }
