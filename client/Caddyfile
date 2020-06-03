@@ -1,0 +1,43 @@
+localhost:3000 {
+  encode gzip
+  root * ./app-gateway/dist
+  try_files {path} /index.html
+  file_server browse
+
+  header {
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
+}
+
+localhost:8001 {
+  encode gzip
+  root * ./app-foo/dist
+  try_files {path} /index.html
+  file_server browse
+
+  header {
+    Access-Control-Allow-Origin https://localhost:3000
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
+}
+
+localhost:8002 {
+  encode gzip
+  root * ./app-bar/dist
+  try_files {path} /index.html
+  file_server browse
+
+  header {
+    Access-Control-Allow-Origin https://localhost:3000
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
+}
