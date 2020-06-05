@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-ENV HOME /app-bar
+ENV HOME /mod-foo
 
 WORKDIR ${HOME}
 ADD . $HOME

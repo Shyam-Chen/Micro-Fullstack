@@ -1,4 +1,4 @@
-localhost:3000 {
+localhost:8000 {
   encode gzip
   root * ./app-gateway/dist
   try_files {path} /index.html
@@ -14,12 +14,12 @@ localhost:3000 {
 
 localhost:8001 {
   encode gzip
-  root * ./app-foo/dist
+  root * ./mod-foo/dist
   try_files {path} /index.html
   file_server browse
 
   header {
-    Access-Control-Allow-Origin https://localhost:3000
+    Access-Control-Allow-Origin https://localhost:8000
     Strict-Transport-Security max-age=31536000
     X-Content-Type-Options nosniff
     X-Frame-Options DENY
@@ -29,12 +29,12 @@ localhost:8001 {
 
 localhost:8002 {
   encode gzip
-  root * ./app-bar/dist
+  root * ./mod-bar/dist
   try_files {path} /index.html
   file_server browse
 
   header {
-    Access-Control-Allow-Origin https://localhost:3000
+    Access-Control-Allow-Origin https://localhost:8000
     Strict-Transport-Security max-age=31536000
     X-Content-Type-Options nosniff
     X-Frame-Options DENY

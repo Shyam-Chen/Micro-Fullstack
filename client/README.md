@@ -2,33 +2,26 @@
 
 ## Concept
 
-- Applications
-
-```
+```sh
+# entry
 app-gateway
-  app-foo
-  app-bar
+
+# modules
+mod-foo
+mod-bar
+
+# extends
 app-components
 app-assembly
 ```
 
-- Components
-
-Implement Web Components:
-
-```html
-<app-header></app-header>
-<app-footer></app-footer>
-```
-
-Create a Web Component in Svelte
-
 ## Steps
 
 - [x] Create an Application Gateway (`app-gateway`, created by `parcel`)
-- [x] Create a basic pilet (`app-foo`, created by `vue-cli`)
-- [x] Create another basic pilet (`app-bar`, created by `vue-cli`)
+- [x] Create a basic pilet (`mod-foo`, created by `vue-cli`)
+- [x] Create another basic pilet (`mod-bar`, created by `vue-cli`)
 - [x] Create Web Components (`app-components`, created by `rollup`)
+- [x] Create WebAssembly (`app-assembly`, created by `wasm-pack`)
 
 ## Getting Started
 
@@ -50,8 +43,8 @@ $ sh run.sh --build
 Visit [http://localhost:8000/](http://localhost:8000/).
 
 `app-gateway` is listening on port 8000.<br>
-`app-foo` is listening on port 8001.<br>
-`app-bar` is listening on port 8002.
+`mod-foo` is listening on port 8001.<br>
+`mod-bar` is listening on port 8002.
 
 ### Create your own basic pilet with Webpack using [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
 
