@@ -2,5 +2,8 @@
   "name": "app-bar",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^2.14.1"
+  }
 }

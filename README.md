@@ -8,3 +8,4 @@
 ## [Back-end](./server/README.md)
 
 * [Kong Gateway](https://konghq.com/kong/)
+* [WebAssembly](https://webassembly.org/)

@@ -12,7 +12,6 @@ mod-bar
 
 # extends
 app-components
-app-assembly
 ```
 
 ## Steps
@@ -21,7 +20,6 @@ app-assembly
 - [x] Create a basic pilet (`mod-foo`, created by `vue-cli`)
 - [x] Create another basic pilet (`mod-bar`, created by `vue-cli`)
 - [x] Create Web Components (`app-components`, created by `rollup`)
-- [x] Create WebAssembly (`app-assembly`, created by `wasm-pack`)
 
 ## Getting Started
 
