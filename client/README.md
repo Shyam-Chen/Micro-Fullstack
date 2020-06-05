@@ -9,6 +9,7 @@ app-gateway
   app-foo
   app-bar
 app-components
+app-assembly
 ```
 
 - Components
