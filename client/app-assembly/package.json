@@ -10,9 +10,7 @@
     "assemblyscript": "^0.10.0"
   },
   "scripts": {
-    "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --debug",
-    "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --optimize",
-    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    "build": "asc src/index.ts -b dist/as-api.wasm -t dist/as-api.wat --sourceMap --optimize",
     "test": "node tests"
   }
 }

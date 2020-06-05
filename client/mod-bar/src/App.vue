@@ -14,12 +14,16 @@
 
 <script>
 import HelloWorld from '@/components/HelloWorld.vue'
+// import asApi from '../../app-assembly';
 
 export default {
   name: 'App',
   components: {
     HelloWorld
   },
+  // mounted() {
+  //   console.log(asApi);
+  // },
   methods: {
     push(location) {
       window.history.pushState({}, '', location);
