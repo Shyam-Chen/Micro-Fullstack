@@ -1,4 +1,4 @@
-# Front-end
+# Micro Frontends
 
 ## Concept
 

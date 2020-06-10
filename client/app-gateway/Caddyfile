@@ -1,4 +1,13 @@
-80
+localhost:8000 {
+  encode gzip
+  root * ./app-gateway/dist
+  try_files {path} /index.html
+  file_server browse
 
-root /dist
-file_server
+  header {
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
+}

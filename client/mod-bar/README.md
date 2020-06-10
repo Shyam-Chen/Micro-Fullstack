@@ -1,4 +1,4 @@
-# world
+# Mod Bar
 
 ## Project setup
 ```
