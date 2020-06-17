@@ -1,5 +1,14 @@
 # Micro Frontends
 
+### Table of Contents
+
+- Local Development
+- Previewing Locally
+- Application Containerization
+- Production Ready
+
+---
+
 ## Concept
 
 ```sh
@@ -155,3 +164,27 @@ sync(store, router);
 - base: process.env.APP_BASE,
 + base: window.__POWERED_BY_QIANKUN__ ? '/vue-starter' + process.env.APP_BASE : process.env.APP_BASE,
 ```
+
+## Local Development
+
+```sh
+$ sh run.sh --serve
+```
+
+## Previewing Locally
+
+```sh
+$ caddy run
+```
+
+## Application Containerization
+
+docker + caddy + docker-compose
+
+Push images to Docker Hub
+
+## Production Ready
+
+minikube + kantive
+
+Pull images from Docker Hub

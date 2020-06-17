@@ -2,12 +2,12 @@
 
 :maple_leaf: Build, test, deploy, and scale microservices in ECMAScript.
 
-## [Micro Frontends](./client/README.md)
+## [Micro Frontends](./client)
 
 - [Single SPA](https://single-spa.js.org/)
 - [Web Components](https://www.webcomponents.org/)
 
-## [Micro Backends](./server/README.md)
+## [Micro Backends](./server)
 
 - [Kong Gateway](https://konghq.com/kong/)
 - [WebAssembly](https://webassembly.org/)
