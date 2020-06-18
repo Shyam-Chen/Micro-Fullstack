@@ -1,0 +1,12 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+
+metadata:
+  name: gateway
+  namespace: micro
+
+spec:
+  template:
+    spec:
+      containers:
+        - image: docker.io/<DOCKER_ID_USER>/gateway

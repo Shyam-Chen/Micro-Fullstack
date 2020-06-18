@@ -179,12 +179,25 @@ $ caddy run
 
 ## Application Containerization
 
-docker + caddy + docker-compose
+docker + docker-compose
 
-Push images to Docker Hub
+TODO: Push images to Docker Hub
+
+```sh
+$ docker login
+
+$ docker-compose build
+$ docker-compose push
+```
 
 ## Production Ready
 
 minikube + kantive
 
-Pull images from Docker Hub
+TODO: Pull images from Docker Hub
+
+```sh
+$ minikube start
+$ kubectl apply --filename service.yml
+$ kubectl get services
+```

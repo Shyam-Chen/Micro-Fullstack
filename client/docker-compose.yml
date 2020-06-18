@@ -2,26 +2,19 @@ version: '3.8'
 
 services:
   gateway:
-    image: gateway
+    image: <DOCKER_ID_USER>/gateway:<IMAGE_TAG>
     build:
       context: ./app-gateway
       dockerfile: Dockerfile
 
   foo:
-    image: foo
+    image: <DOCKER_ID_USER>/foo:<IMAGE_TAG>
     build:
       context: ./mod-foo
       dockerfile: Dockerfile
 
   bar:
-    image: bar
+    image: <DOCKER_ID_USER>/bar:<IMAGE_TAG>
     build:
       context: ./mod-bar
       dockerfile: Dockerfile
-
-  caddy:
-    image: caddy:2
-    ports:
-      - '8000:8000'
-      - '8001:8001'
-      - '8002:8002'
