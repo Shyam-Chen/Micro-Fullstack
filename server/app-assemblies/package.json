@@ -1,5 +1,5 @@
 {
-  "name": "app-assembly",
+  "name": "app-assemblies",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,10 +7,13 @@
     "@assemblyscript/loader": "^0.10.0"
   },
   "devDependencies": {
-    "assemblyscript": "^0.10.0"
+    "assemblyscript": "^0.10.0",
+    "jest": "^26.0.1",
+    "onchange": "^7.0.2"
   },
   "scripts": {
+    "serve": "onchange -i 'src/**/*' -- yarn build",
     "build": "asc src/index.ts -b dist/as-api.wasm -t dist/as-api.wat --sourceMap --optimize",
-    "test": "node tests"
+    "test": "jest"
   }
 }
