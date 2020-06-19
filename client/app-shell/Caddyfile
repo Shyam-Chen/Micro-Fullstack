@@ -1,6 +1,6 @@
 localhost:8000 {
   encode gzip
-  root * ./app-gateway/dist
+  root * ./dist
   try_files {path} /index.html
   file_server browse
 

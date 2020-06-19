@@ -4,7 +4,7 @@ services:
   gateway:
     image: <DOCKER_ID_USER>/gateway:<IMAGE_TAG>
     build:
-      context: ./app-gateway
+      context: ./app-shell
       dockerfile: Dockerfile
 
   foo:

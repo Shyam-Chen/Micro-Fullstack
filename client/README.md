@@ -13,7 +13,7 @@
 
 ```sh
 # entry
-app-gateway
+app-shell
 
 # modules
 mod-foo
@@ -25,7 +25,7 @@ app-components
 
 ## Steps
 
-- [x] Create an Application Gateway (`app-gateway`, created by `parcel`)
+- [x] Create an Application Gateway (`app-shell`, created by `parcel`)
 - [x] Create a basic pilet (`mod-foo`, created by `vue-cli`)
 - [x] Create another basic pilet (`mod-bar`, created by `vue-cli`)
 - [x] Create Web Components (`app-components`, created by `rollup`)
@@ -49,7 +49,7 @@ $ sh run.sh --build
 
 Visit [http://localhost:8000/](http://localhost:8000/).
 
-`app-gateway` is listening on port 8000.<br>
+`app-shell` is listening on port 8000.<br>
 `mod-foo` is listening on port 8001.<br>
 `mod-bar` is listening on port 8002.
 

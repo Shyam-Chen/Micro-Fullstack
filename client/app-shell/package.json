@@ -1,5 +1,5 @@
 {
-  "name": "app-gateway",
+  "name": "app-shell",
   "version": "1.0.0",
   "scripts": {
     "serve": "parcel index.pug --port 8000",
