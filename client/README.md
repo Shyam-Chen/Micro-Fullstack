@@ -40,11 +40,10 @@ $ cd Micro-Fullstack
 
 $ cd client
 $ yarn install
+$ yarn bootstrap
 
-$ sh run.sh --install
-$ sh run.sh --serve
-
-$ sh run.sh --build
+$ yarn serve
+$ yarn build
 ```
 
 Visit [http://localhost:8000/](http://localhost:8000/).
