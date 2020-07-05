@@ -7,7 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "qiankun": "^2.0.11"
+    "qiankun": "^2.0.16"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",

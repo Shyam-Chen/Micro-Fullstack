@@ -97,7 +97,7 @@ $ yarn install
 ```diff
 // src/main.js
 
-import register from '~/core/register';
+import App from './App';
 
 + if (window.__POWERED_BY_QIANKUN__) {
 +   // eslint-disable-next-line no-undef
@@ -116,13 +116,13 @@ sync(store, router);
 -   i18n,
 -   render: h => h(App),
 - });
-
+-
 - vm.$mount('#root');
-
+-
 - register();
 
 + let vm = null;
-
++
 + function render() {
 +   vm = new Vue({
 +     router,
@@ -131,26 +131,24 @@ sync(store, router);
 +     apolloProvider,
 +     i18n,
 +     render: h => h(App),
-+   });
-
-+   vm.$mount('#root');
-
++   }).$mount('#root');
++
 +   register();
 + }
-
++
 + if (!window.__POWERED_BY_QIANKUN__) {
 +   render();
 + }
-
++
 + export async function bootstrap() {
 +   console.log('vue app bootstraped');
 + }
-
++
 + export async function mount(props) {
 +   console.log('props from main framework', props);
 +   render();
 + }
-
++
 + export async function unmount() {
 +   vm.$destroy();
 +   vm = null;

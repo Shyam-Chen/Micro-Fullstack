@@ -2602,9 +2602,9 @@ import-fresh@^2.0.0:
     resolve-from "^3.0.0"
 
 import-html-entry@^1.7.0:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/import-html-entry/-/import-html-entry-1.7.3.tgz#9c61234588b81abffc0896e0f8f4adabd8eabd6a"
-  integrity sha512-jWXK2gY61bC4XxUvVh8z+MGhQpBKBWmYyC+22scchwNky0HitTq+yDDTgVKSSoL/Ei0dh2lHGECdPwkHq0rKGQ==
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/import-html-entry/-/import-html-entry-1.7.4.tgz#40bbd4269baa00ed2986a1d2052e6818c1c92379"
+  integrity sha512-A/ntpKNDEqIgsx382qpIy7h3mKT1R18E46GSaYCDjs95m49KcYU6mfRdkwRZM7tR/PtWxuX8EbLE0gKskDLjeg==
   dependencies:
     "@babel/runtime" "^7.7.2"
 
@@ -4228,10 +4228,10 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
-qiankun@^2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/qiankun/-/qiankun-2.0.11.tgz#8665cf5a0b5c72d09c262f0838f9b8075cb86ec8"
-  integrity sha512-MXYLIv5g3o6/2TuWDEcL9xa3Zl+BTjzxrE2cNY4eiIKwkiAgqdl7/A144Q10dEgCPBJsSvrrsJJl0sSirOVmZQ==
+qiankun@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/qiankun/-/qiankun-2.0.16.tgz#344d2f78a067b20992a2faddf4674c08a7fb8b81"
+  integrity sha512-03ViCIamE9FWw6DaSskiI+32jnefNMlrH+e3uQaSgHFzPsAnJa+9YcU+3lyECnxp2yelQe4w4j9R5hY9CgWXdQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     import-html-entry "^1.7.0"
