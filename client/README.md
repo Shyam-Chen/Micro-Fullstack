@@ -162,6 +162,31 @@ sync(store, router);
 + base: window.__POWERED_BY_QIANKUN__ ? '/vue-starter' + process.env.APP_BASE : process.env.APP_BASE,
 ```
 
+```diff
+// app-shell/index.js
+
+  registerMicroApps([
+    {
+      name: 'foo app',
+      entry: process.env.ENTRY_FOO,
+      container: '#app-root',
+      activeRule: '/foo',
+    },
+    {
+      name: 'bar app',
+      entry: process.env.ENTRY_BAR,
+      container: '#app-root',
+      activeRule: '/bar',
+    },
++   {
++     name: 'vue starter',
++     entry: '//localhost:8003',
++     container: '#app-root',
++     activeRule: '/vue-starter',
++   },
+  ]);
+```
+
 ## Local Development
 
 ```sh
