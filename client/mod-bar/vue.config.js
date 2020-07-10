@@ -32,6 +32,7 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    progress: false,
   },
   // 自定义webpack配置
   configureWebpack: {

@@ -32,6 +32,7 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
+    progress: false,
   },
   // 自定义webpack配置
   configureWebpack: {
@@ -51,5 +52,6 @@ module.exports = {
 
   chainWebpack: config => {
     config.module.rules.delete('eslint');
+    config.plugins.delete('progress');
   },
 };

@@ -4,6 +4,8 @@
       <ul>
         <li><div class="link" @click="push('/foo')">Foo</div></li>
         <li><div class="link" @click="push('/bar')">Bar</div></li>
+        <li><div class="link" @click="push('/react16')">react16</div></li>
+        <li><div class="link" @click="push('/angular9/')">angular9</div></li>
       </ul>
     </nav>
 
