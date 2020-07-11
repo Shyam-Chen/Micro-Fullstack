@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "ng build --prod --deploy-url http://localhost:8004/",
-    "serve": "ng serve --disable-host-check --port 8004 --base-href /angular9 --live-reload false"
+    "serve": "ng serve --disable-host-check --port 8004 --live-reload false"
   },
   "private": true,
   "dependencies": {

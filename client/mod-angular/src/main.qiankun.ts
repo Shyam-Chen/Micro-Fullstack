@@ -1,4 +1,6 @@
-// import 'zone.js/dist/zone';
+declare const window: any;
+
+import 'zone.js/dist/zone';
 import { enableProdMode, NgZone } from '@angular/core';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -12,7 +14,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-if (!(window as any).__POWERED_BY_QIANKUN__) {
+if (!window.__POWERED_BY_QIANKUN__) {
   platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch(err => console.error(err));
