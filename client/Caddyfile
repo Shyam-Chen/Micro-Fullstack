@@ -14,7 +14,7 @@ localhost:8000 {
 
 localhost:8001 {
   encode gzip
-  root * ./mod-foo/dist
+  root * ./mod-vue/dist
   try_files {path} /index.html
   file_server browse
 

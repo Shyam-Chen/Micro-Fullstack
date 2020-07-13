@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-ENV HOME /mod-foo
+ENV HOME /mod-vue
 
 WORKDIR ${HOME}
 ADD . $HOME

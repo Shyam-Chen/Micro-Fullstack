@@ -10,7 +10,7 @@ services:
   foo:
     image: <DOCKER_ID_USER>/foo:<IMAGE_TAG>
     build:
-      context: ./mod-foo
+      context: ./mod-vue
       dockerfile: Dockerfile
 
   bar:

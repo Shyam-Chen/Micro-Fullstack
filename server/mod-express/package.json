@@ -1,9 +1,9 @@
 {
-  "name": "app-foo",
+  "name": "mod-express",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "fastify": "^2.14.1"
+    "express": "^4.17.1"
   }
 }

@@ -16,7 +16,7 @@
 app-shell
 
 # modules
-mod-foo
+mod-vue
 mod-bar
 
 # extends
@@ -26,7 +26,7 @@ app-components
 ## Steps
 
 - [x] Create an Application Gateway (`app-shell`, created by `parcel`)
-- [x] Create a basic pilet (`mod-foo`, created by `vue-cli`)
+- [x] Create a basic pilet (`mod-vue`, created by `vue-cli`)
 - [x] Create another basic pilet (`mod-bar`, created by `vue-cli`)
 - [x] Create Web Components (`app-components`, created by `rollup`)
 
@@ -49,7 +49,7 @@ $ yarn build
 Visit [http://localhost:8000/](http://localhost:8000/).
 
 `app-shell` is listening on port 8000.<br>
-`mod-foo` is listening on port 8001.<br>
+`mod-vue` is listening on port 8001.<br>
 `mod-bar` is listening on port 8002.
 
 ### Create your own basic pilet with Webpack using [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
@@ -190,7 +190,7 @@ sync(store, router);
 ## Local Development
 
 ```sh
-$ sh run.sh --serve
+$ yarn serve
 ```
 
 ## Previewing Locally

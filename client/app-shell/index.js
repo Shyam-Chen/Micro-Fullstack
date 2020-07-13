@@ -3,10 +3,10 @@ import { registerMicroApps, setDefaultMountApp, start } from 'qiankun';
 
 registerMicroApps([
   {
-    name: 'foo app',
-    entry: process.env.ENTRY_FOO,
+    name: 'vue app',
+    entry: process.env.ENTRY_VUE,
     container: '#app-root',
-    activeRule: '/foo',
+    activeRule: '/vue',
   },
   {
     name: 'bar app',
@@ -28,6 +28,6 @@ registerMicroApps([
   },
 ]);
 
-setDefaultMountApp('/foo');
+setDefaultMountApp('/vue');
 
 start();
