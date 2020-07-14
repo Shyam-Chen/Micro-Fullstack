@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build": "ng build --prod --deploy-url http://localhost:8004/",
-    "serve": "ng serve --disable-host-check --port 8004 --live-reload false"
+    "build": "ng build --prod --deploy-url http://localhost:8003/",
+    "serve": "ng serve --disable-host-check --port 8003 --live-reload false"
   },
   "private": true,
   "dependencies": {

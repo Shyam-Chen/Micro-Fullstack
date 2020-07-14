@@ -9,7 +9,7 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   providers: [
     Location,
-    { provide: APP_BASE_HREF, useValue: window.__POWERED_BY_QIANKUN__ ? '/angular9' : '/' },
+    { provide: APP_BASE_HREF, useValue: window.__POWERED_BY_QIANKUN__ ? '/angular' : '/' },
     { provide: LocationStrategy, useClass: PathLocationStrategy },
   ],
   exports: [RouterModule],

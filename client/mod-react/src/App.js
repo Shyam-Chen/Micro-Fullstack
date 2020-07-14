@@ -13,7 +13,7 @@ const About = lazy(() => import('./pages/About'));
 
 const RouteExample = () => {
   return (
-    <Router basename={window.__POWERED_BY_QIANKUN__ ? '/react16' : '/'}>
+    <Router basename={window.__POWERED_BY_QIANKUN__ ? '/react' : '/'}>
       <nav>
         <Link to="/">Home</Link>
         <Divider type="vertical" />

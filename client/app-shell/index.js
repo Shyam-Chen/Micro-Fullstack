@@ -3,29 +3,29 @@ import { registerMicroApps, setDefaultMountApp, start } from 'qiankun';
 
 registerMicroApps([
   {
-    name: 'vue app',
+    name: 'mod-vue',
     entry: process.env.ENTRY_VUE,
     container: '#app-root',
     activeRule: '/vue',
   },
   {
-    name: 'bar app',
-    entry: process.env.ENTRY_BAR,
+    name: 'mod-react',
+    entry: process.env.ENTRY_REACT,
     container: '#app-root',
-    activeRule: '/bar',
+    activeRule: '/react',
   },
   {
-    name: 'react16 app',
-    entry: '//localhost:8003',
+    name: 'mod-angular',
+    entry: process.env.ENTRY_ANGULAR,
     container: '#app-root',
-    activeRule: '/react16',
+    activeRule: '/angular',
   },
-  {
-    name: 'angular9 app',
-    entry: '//localhost:8004',
-    container: '#app-root',
-    activeRule: '/angular9',
-  },
+  // {
+  //   name: 'mod-svelte',
+  //   entry: process.env.ENTRY_SVELTE,
+  //   container: '#app-root',
+  //   activeRule: '/svelte',
+  // },
 ]);
 
 setDefaultMountApp('/vue');
