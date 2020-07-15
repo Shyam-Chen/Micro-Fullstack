@@ -4,7 +4,9 @@
     <span class="dynamic">dynamic span color</span>
 
     <app-header></app-header>
-    <app-header ref="appHeader" :title="title"></app-header>
+
+    <!-- @message="log" -> v-evt:message="log" -->
+    <app-header :title="title" v-evt:message="log"></app-header>
   </div>
 </template>
 
@@ -17,17 +19,26 @@
 <script>
 import '~/header/Header';
 
+// https://github.com/sveltejs/svelte/issues/3119
+const evt = {
+  bind(el, binding, vnode) {
+    el.$on(binding.arg, binding.value);
+  },
+};
+
 export default {
+  directives: {
+    evt,
+  },
   data() {
     return {
       title: 'Title 333',
     };
   },
-  mounted() {
-    // FIXME: https://github.com/sveltejs/svelte/issues/3119
-    this.$refs.appHeader.$on('message', evt => {
+  methods: {
+    log(evt) {
       console.log(evt.detail.text);
-    });
+    },
   },
 };
 </script>

@@ -1,12 +1,11 @@
 const webpack = require('webpack');
+const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 
 const { name } = require('./package');
 
 module.exports = {
-  webpack: config => {
-    config.entry = config.entry.filter(
-      (e) => !e.includes('webpackHotDevClient')
-    );
+  webpack: (config) => {
+    config.entry = config.entry.filter((e) => !e.includes('webpackHotDevClient'));
 
     config.output.library = `${name}-[name]`;
     config.output.libraryTarget = 'umd';
@@ -14,13 +13,17 @@ module.exports = {
     config.output.globalObject = 'window';
 
     config.plugins = config.plugins.filter(
-      (p) => !(p instanceof webpack.HotModuleReplacementPlugin)
+      (plugin) => !(plugin instanceof webpack.HotModuleReplacementPlugin),
+    );
+
+    config.resolve.plugins = config.resolve.plugins.filter(
+      (plugin) => !(plugin instanceof ModuleScopePlugin),
     );
 
     return config;
   },
 
-  devServer: _ => {
+  devServer: (_) => {
     const config = {};
 
     config.port = '8002';

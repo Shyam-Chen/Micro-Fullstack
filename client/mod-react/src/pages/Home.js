@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
-export default function() {
+import '../../../app-components/dist/header/Header';
+
+const useEvt = (evtName, evtFunc) => {
+  const evtRef = useRef(null);
+
+  useEffect(() => {
+    if (!evtRef.current) return null;
+    evtRef.current.$on(evtName, evtFunc);
+  }, [evtName, evtFunc, evtRef]);
+
+  return evtRef;
+};
+
+export default function () {
+  const onMessage = useEvt('message', evt => { console.log(evt.detail.text); });
+
   return (
     <h2 className="app-nav-item" style={{ borderColor: 'red' }}>
       Home
+      <app-header></app-header>
+      <app-header title={'Title 2'} ref={onMessage}></app-header>
     </h2>
   );
 }
