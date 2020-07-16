@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 
-import '../../../app-components/dist/header/Header';
+import Header from '../../../app-components/dist/header/Header';
+
+customElements.get('app-header') || customElements.define('app-header', Header);
 
 const useEvt = (evtName, evtFunc) => {
   const evtRef = useRef(null);

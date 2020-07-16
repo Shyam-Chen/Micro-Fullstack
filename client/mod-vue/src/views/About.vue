@@ -7,6 +7,8 @@
 
     <!-- @message="log" -> v-evt:message="log" -->
     <app-header :title="title" v-evt:message="log"></app-header>
+
+    <app-footer :title="'Good 2'" @good="log"></app-footer>
   </div>
 </template>
 
@@ -17,7 +19,11 @@
 </style>
 
 <script>
-import '~/header/Header';
+import Header from '~/header/Header';
+import Footer from '~/footer/Footer';
+
+customElements.get('app-header') || customElements.define('app-header', Header);
+customElements.get('app-footer') || customElements.define('app-footer', Footer);
 
 // https://github.com/sveltejs/svelte/issues/3119
 const evt = {

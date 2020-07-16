@@ -1,4 +1,4 @@
-<svelte:options tag="app-header"></svelte:options>
+<svelte:options tag={null} />
 
 <script>
 import { createEventDispatcher } from 'svelte';
