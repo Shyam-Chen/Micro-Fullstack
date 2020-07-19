@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, Input, AfterViewInit } from '@angular/core';
 
 @Directive({ selector: '[elEvt]' })
 export class EvtDirective implements AfterViewInit {
