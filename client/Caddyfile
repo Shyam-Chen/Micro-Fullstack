@@ -29,7 +29,22 @@ localhost:8001 {
 
 localhost:8002 {
   encode gzip
-  root * ./mod-bar/dist
+  root * ./mod-react/dist
+  try_files {path} /index.html
+  file_server browse
+
+  header {
+    Access-Control-Allow-Origin https://localhost:8000
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
+}
+
+localhost:8003 {
+  encode gzip
+  root * ./mod-angular/dist
   try_files {path} /index.html
   file_server browse
 

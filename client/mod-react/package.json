@@ -10,7 +10,7 @@
   },
   "scripts": {
     "serve": "rescripts start",
-    "build": "rescripts build",
+    "build": "rescripts build && mv build dist",
     "test": "rescripts test",
     "eject": "rescripts eject"
   },

@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:2": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build": "ng build --prod --deploy-url http://localhost:8003/",
+    "build": "ng build",
     "serve": "ng serve --disable-host-check --port 8003 --live-reload false"
   },
   "private": true,
