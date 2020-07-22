@@ -1,14 +1,17 @@
 import http from 'http';
 import Koa from 'koa';
 import cors from '@koa/cors';
+import bodyParser from 'koa-bodyparser';
+
+import router from '~/core/router';
 
 const app = new Koa();
 
 app.use(cors());
+app.use(bodyParser());
 
-app.use(async (ctx) => {
-  ctx.body = 'Hello World';
-});
+app.use(router.routes());
+app.use(router.allowedMethods());
 
 const server = http.createServer(app.callback());
 
