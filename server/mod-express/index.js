@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('mod-express');
 });
 
-app.listen(3001, (err, address) => {
+app.listen(3002, (err, address) => {
   if (err) throw err;
-  console.log(`server listening on :3001`);
+  console.log(`server listening on :3002`);
 });

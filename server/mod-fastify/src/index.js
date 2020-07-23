@@ -7,7 +7,7 @@ app.get('/', async (request, reply) => {
   return { text: 'foo' };
 });
 
-app.listen(3000, (err, address) => {
+app.listen(3004, (err, address) => {
   if (err) throw err;
   fastify.log.info(`server listening on ${address}`);
 });
