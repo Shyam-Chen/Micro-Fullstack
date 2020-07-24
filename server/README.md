@@ -90,7 +90,7 @@ $
 
 ## Production Ready
 
-minikube + kantive
+minikube + knative
 
 ```sh
 $

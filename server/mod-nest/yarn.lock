@@ -55,6 +55,11 @@
     ora "4.0.3"
     rxjs "6.5.4"
 
+"@assemblyscript/loader@^0.14.3":
+  version "0.14.3"
+  resolved "https://registry.yarnpkg.com/@assemblyscript/loader/-/loader-0.14.3.tgz#da316068d67edee0515d9ae34fd35d3079830fc6"
+  integrity sha512-+9vKdRV+sjD26lMRnCZUqVvLoiEb7VTxDYaesRoS6ZKlckC46p97xYf++CV9N/qi3eGTEWcfnkK8lFbdNGP7EQ==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.8.3":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"

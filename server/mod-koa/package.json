@@ -8,6 +8,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@assemblyscript/loader": "^0.14.3",
     "@koa/cors": "^3.1.0",
     "@koa/router": "^9.3.1",
     "koa": "^2.13.0",

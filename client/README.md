@@ -78,7 +78,7 @@ $ docker-compose push
 
 ## Production Ready
 
-minikube + kantive
+minikube + knative
 
 TODO: Pull images from Docker Hub
 
