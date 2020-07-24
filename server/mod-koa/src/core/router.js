@@ -5,7 +5,7 @@ import hello from '~/hello';
 const router = new Router();
 
 router.get('/', async (ctx) => {
-  ctx.body = 'app-root';
+  ctx.body = 'mod-koa';
 });
 
 router.use('/hello', hello.routes(), hello.allowedMethods());

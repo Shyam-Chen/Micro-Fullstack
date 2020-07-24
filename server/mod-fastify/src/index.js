@@ -1,13 +1,13 @@
-const fastify = require('fastify');
+import fastify from 'fastify';
 
 const app = fastify();
 
 app.get('/', async (request, reply) => {
-  reply.type('application/json').code(200);
-  return { text: 'foo' };
+  return { data: 'mod-fastify' };
 });
 
 app.listen(3004, (err, address) => {
   if (err) throw err;
-  fastify.log.info(`server listening on ${address}`);
+  console.log('🚀  App: Bootstrap Succeeded');
+  console.log(`🚀  Host: ${address}`);
 });

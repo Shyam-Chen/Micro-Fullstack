@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'app-root';
+  appRoot(): string {
+    return 'mod-nest';
   }
 }

@@ -1,9 +1,22 @@
 {
   "name": "mod-express",
   "version": "1.0.0",
+  "scripts": {
+    "serve": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist --ignore **/__tests__/**,**/__mocks__/**"
+  },
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-plugin-root-import": "^6.5.0",
+    "nodemon": "^2.0.4"
   }
 }

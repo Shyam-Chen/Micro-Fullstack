@@ -16,6 +16,6 @@ app.use(router.allowedMethods());
 const server = http.createServer(app.callback());
 
 server.listen(3001, 'localhost', () => {
-  console.log('🚀  App: Bootstrap Succeeded.');
-  console.log(`🚀  Host: http://${'localhost'}:${'3001'}/.`);
+  console.log('🚀  App: Bootstrap Succeeded');
+  console.log(`🚀  Host: http://${'localhost'}:${'3001'}`);
 });
