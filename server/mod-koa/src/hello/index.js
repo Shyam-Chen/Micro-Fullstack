@@ -1,8 +1,12 @@
+import fs from 'fs';
+import path from 'path';
 import Router from '@koa/router';
-
-import assemblies from '../../../app-assemblies';
+import loader from '@assemblyscript/loader';
 
 const router = new Router();
+
+const wasmFile = fs.readFileSync(path.join(__dirname, '../../../app-assemblies/dist/as-api.wasm'));
+const assemblies = loader.instantiateSync(wasmFile, {}).exports;
 
 router.get('/', async (ctx) => {
   ctx.body = { data: 'Hello, World!' };
