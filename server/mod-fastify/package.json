@@ -9,7 +9,8 @@
   "license": "MIT",
   "dependencies": {
     "@assemblyscript/loader": "^0.14.3",
-    "fastify": "^3.1.1"
+    "fastify": "^3.1.1",
+    "fastify-cors": "^4.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",

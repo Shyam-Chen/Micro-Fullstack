@@ -1,12 +1,15 @@
-import fastify from 'fastify';
+import Fastify from 'fastify';
+import cors from 'fastify-cors';
 
-const app = fastify();
+import router from '~/core/router';
 
-app.get('/', async (request, reply) => {
-  return { data: 'mod-fastify' };
-});
+const fastify = Fastify();
 
-app.listen(3004, (err, address) => {
+fastify.register(cors);
+
+fastify.register(router, { prefix: '/' });
+
+fastify.listen(3004, 'localhost', (err, address) => {
   if (err) throw err;
   console.log('🚀  App: Bootstrap Succeeded');
   console.log(`🚀  Host: ${address}`);
