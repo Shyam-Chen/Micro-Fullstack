@@ -7,6 +7,11 @@ metadata:
 
 spec:
   template:
+    metadata:
+      name: app-shell
+      annotations:
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "5"
     spec:
       containers:
-        - image: docker.io/<DOCKER_ID_USER>/shell
+        - image: docker.io/<DOCKER_ID_USER>/shell:<IMAGE_TAG>

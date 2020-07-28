@@ -1,20 +1,26 @@
 version: '3.8'
 
 services:
-  gateway:
-    image: <DOCKER_ID_USER>/gateway:<IMAGE_TAG>
+  shell:
+    image: <DOCKER_ID_USER>/shell:<IMAGE_TAG>
     build:
       context: ./app-shell
       dockerfile: Dockerfile
 
-  foo:
-    image: <DOCKER_ID_USER>/foo:<IMAGE_TAG>
+  vue:
+    image: <DOCKER_ID_USER>/vue:<IMAGE_TAG>
     build:
       context: ./mod-vue
       dockerfile: Dockerfile
 
-  bar:
-    image: <DOCKER_ID_USER>/bar:<IMAGE_TAG>
+  react:
+    image: <DOCKER_ID_USER>/react:<IMAGE_TAG>
     build:
-      context: ./mod-bar
+      context: ./mod-react
+      dockerfile: Dockerfile
+
+  angular:
+    image: <DOCKER_ID_USER>/angular:<IMAGE_TAG>
+    build:
+      context: ./mod-angular
       dockerfile: Dockerfile
