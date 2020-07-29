@@ -1,8 +1,4 @@
-FROM node:14-alpine
+FROM caddy:2-alpine
 
-ENV HOME /mod-vue
-
-WORKDIR ${HOME}
-ADD . $HOME
-
-RUN yarn install --frozen-lockfile
+COPY Caddyfile /etc/caddy/Caddyfile
+COPY /dist /usr/share/caddy/dist

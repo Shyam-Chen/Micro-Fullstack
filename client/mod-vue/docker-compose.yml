@@ -1,9 +1,19 @@
-version: '3'
+version: '3.8'
 
 services:
-
-  caddy:
-    image: caddy
+  serve:
+    image: serve-mod-vue
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "80:8000"
-      - "443:443"
+      - '80:80'
+      - '443:443'
+      - '8001:8001'
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

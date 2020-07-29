@@ -20,12 +20,12 @@ registerMicroApps([
     container: '#app-root',
     activeRule: '/angular',
   },
-  // {
-  //   name: 'mod-svelte',
-  //   entry: process.env.ENTRY_SVELTE,
-  //   container: '#app-root',
-  //   activeRule: '/svelte',
-  // },
+  {
+    name: 'mod-svelte',
+    entry: process.env.ENTRY_SVELTE,
+    container: '#app-root',
+    activeRule: '/svelte',
+  },
 ]);
 
 setDefaultMountApp('/vue');

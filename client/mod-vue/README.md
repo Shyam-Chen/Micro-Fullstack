@@ -1,19 +1,24 @@
-# Mod Foo
+# Mod Vue
 
-## Project setup
-```
-yarn install
-```
+## Usage
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+```sh
+$ yarn install
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+```sh
+$ yarn serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+$ yarn build
+```
+
+## Dockerization
+
+```sh
+$ yarn build
+$ docker-compose up
+```
+
+Visit [http://localhost:8001](http://localhost:8001).

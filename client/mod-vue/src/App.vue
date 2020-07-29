@@ -5,6 +5,7 @@
         <li><div class="link" @click="push('/vue')">Vue</div></li>
         <li><div class="link" @click="push('/react')">React</div></li>
         <li><div class="link" @click="push('/angular/')">Angular</div></li>
+        <li><div class="link" @click="push('/svelte')">Svelte</div></li>
       </ul>
     </nav>
 

@@ -1,8 +1,14 @@
-80
+:8001 {
+  encode gzip
+  root * /usr/share/caddy/dist
+  try_files {path} /index.html
+  file_server browse
 
-root /dist
-file_server
-
-header {
-  Access-Control-Allow-Origin *
+  header {
+    Access-Control-Allow-Origin http://localhost:8000
+    Strict-Transport-Security max-age=31536000
+    X-Content-Type-Options nosniff
+    X-Frame-Options DENY
+    Referrer-Policy no-referrer-when-downgrade
+  }
 }
