@@ -4,26 +4,20 @@
 
 Microservices and Serverless Computing:
 
-- Create microservice applications
-  - Vue / React / Angular / Svelte
-  - Koa / Express / Nest / Fastify
+- Create microservice applications using JavaScript and TypeScript
+  - Register multiple single-page applications on a single page with Single SPA
+  - Craft reusable components with the Web Components specifications
+  - Build applications with the best front-end frameworks, such as Vue, React, Angular and Svelte
+  - Design a service gateway and service registry with Kong Gateway
+  - Write, load and run portable binary code with AssemblyScript and WebAssembly
+  - Build applications with the best back-end frameworks, such as Koa, Express, Nest and Fastify
 - Containerize microservice-based applications with Docker
 - Deploy, serve, and scale applications with the Knative Serving module
 
 ## Micro Frontends
 
-The front-end applications contains the following features:
-
-- [Single SPA](https://single-spa.js.org/)
-- [Web Components](https://www.webcomponents.org/)
-
 See [client folder](./client).
 
 ## Micro Backends
-
-The back-end applications contains the following features:
-
-- [Kong Gateway](https://konghq.com/kong/)
-- [WebAssembly](https://webassembly.org/)
 
 See [server folder](./server).

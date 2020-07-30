@@ -2,9 +2,9 @@
 
 ### Table of Contents
 
+- Prerequisites
 - [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
-- Local Development
 - Previewing Locally
 - Application Containerization
 - Production Ready
@@ -50,12 +50,6 @@ Visit [http://localhost:8000/](http://localhost:8000/).
 `mod-react` is listening on port 8002.<br>
 `mod-angular` is listening on port 8003.<br>
 `mod-svelte` is listening on port 8004.
-
-## Local Development
-
-```sh
-$ yarn serve
-```
 
 ## Previewing Locally
 

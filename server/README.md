@@ -2,14 +2,16 @@
 
 ### Table of Contents
 
-- Directory Structure
-- Getting Started
-- Local Development
+- Prerequisites
+- [Directory Structure](#directory-structure)
+- [Getting Started](#getting-started)
 - Previewing Locally
 - Application Containerization
 - Production Ready
 
 ---
+
+## Prerequisites
 
 ## Directory Structure
 
