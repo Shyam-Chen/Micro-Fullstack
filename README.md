@@ -1,6 +1,14 @@
 # Micro Fullstack
 
-:maple_leaf: Build, test, deploy, and scale microservices in ECMAScript.
+:maple_leaf: ECMAScript Microservices Development: Build, test, deploy, and scale microservices in ECMAScript.
+
+Microservices and Serverless Computing:
+
+- Create microservice applications
+  - Vue / React / Angular / Svelte
+  - Koa / Express / Nest / Fastify
+- Containerize microservice-based applications with Docker
+- Deploy, serve, and scale applications with the Knative Serving module
 
 ## Micro Frontends
 

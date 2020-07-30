@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "echo \"Error: no test specified\" && exit 1",
+    "unit": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "core-js": "^3.6.4",

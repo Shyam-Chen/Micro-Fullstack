@@ -1,57 +1,35 @@
 const path = require('path');
-const { name } = require('./package');
 
-function resolve(dir) {
-  return path.join(__dirname, dir);
-}
-
-const port = 8001; // dev port
+const pkg = require('./package');
 
 module.exports = {
-  /**
-   * You will need to set publicPath if you plan to deploy your site under a sub path,
-   * for example GitHub Pages. If you plan to deploy your site to https://foo.github.io/bar/,
-   * then publicPath should be set to "/bar/".
-   * In most cases please use '/' !!!
-   * Detail: https://cli.vuejs.org/config/#publicpath
-   */
-  outputDir: 'dist',
-  assetsDir: 'static',
-  filenameHashing: true,
-  // tweak internal webpack configuration.
-  // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
+  configureWebpack: {
+    output: {
+      jsonpFunction: `webpackJsonp_${pkg.name}`,
+      library: `${pkg.name}-[name]`,
+      libraryTarget: 'umd',
+    },
+    resolve: {
+      alias: {
+        '@': path.join(__dirname, 'src'),
+        '~': path.join(__dirname, '../app-components/dist'),
+      },
+    },
+  },
+  chainWebpack(config) {
+    config.module.rules.delete('eslint');
+  },
   devServer: {
-    // host: '0.0.0.0',
-    hot: true,
     disableHostCheck: true,
-    port,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+    hot: true,
     overlay: {
       warnings: false,
       errors: true,
     },
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    },
+    port: 8001,
     progress: false,
-  },
-  // 自定义webpack配置
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@': resolve('src'),
-        '~': resolve('../app-components/dist'),
-      },
-    },
-    output: {
-      // 把子应用打包成 umd 库格式
-      library: `${name}-[name]`,
-      libraryTarget: 'umd',
-      jsonpFunction: `webpackJsonp_${name}`,
-    },
-  },
-
-  chainWebpack: config => {
-    config.module.rules.delete('eslint');
-    config.plugins.delete('progress');
   },
 };

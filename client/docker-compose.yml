@@ -24,3 +24,9 @@ services:
     build:
       context: ./mod-angular
       dockerfile: Dockerfile
+
+  svelte:
+    image: <DOCKER_ID_USER>/svelte:<IMAGE_TAG>
+    build:
+      context: ./mod-svelte
+      dockerfile: Dockerfile

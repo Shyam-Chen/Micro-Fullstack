@@ -1,5 +1,3 @@
-<svelte:options tag={null} />
-
 <script>
 import { createEventDispatcher } from 'svelte';
 import { get_current_component } from 'svelte/internal';

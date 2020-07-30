@@ -14,6 +14,18 @@ $ yarn serve
 $ yarn build
 ```
 
+```sh
+$ yarn lint
+```
+
+```sh
+$ yarn unit
+```
+
+```sh
+$ yarn e2e
+```
+
 ## Dockerization
 
 ```sh
