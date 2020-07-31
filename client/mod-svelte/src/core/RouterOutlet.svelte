@@ -1,8 +1,8 @@
 <script>
   import { Router, Link, Route } from "svelte-routing";
 
-  import Home from "~/landings/Home.svelte";
-  import About from "~/landings/About.svelte";
+  import Home from "~/landings/Home";
+  import About from "~/landings/About";
 </script>
 
 <Route path=""><Home /></Route>

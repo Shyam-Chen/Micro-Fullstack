@@ -6,7 +6,8 @@
     "antd": "^3.25.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "single-spa-react": "^3.0.1"
   },
   "scripts": {
     "serve": "rescripts start",

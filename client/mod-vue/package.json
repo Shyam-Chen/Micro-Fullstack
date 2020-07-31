@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "single-spa-vue": "^1.8.2",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
@@ -27,6 +28,9 @@
     "root": true,
     "env": {
       "node": true
+    },
+    "globals": {
+      "__webpack_public_path__": true
     },
     "extends": [
       "plugin:vue/essential",

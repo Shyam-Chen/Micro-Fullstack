@@ -1,7 +1,7 @@
 <script>
   import { Router, Link, Route } from 'svelte-routing';
 
-  import RouterOutlet from '~/core/RouterOutlet.svelte';
+  import RouterOutlet from '~/core/RouterOutlet';
 
   const basepath = window.__POWERED_BY_QIANKUN__ ? '/svelte' : '/';
 </script>
