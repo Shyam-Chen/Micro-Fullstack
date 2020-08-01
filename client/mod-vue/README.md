@@ -19,11 +19,7 @@ $ yarn lint
 ```
 
 ```sh
-$ yarn unit
-```
-
-```sh
-$ yarn e2e
+$ yarn test
 ```
 
 ## Dockerization

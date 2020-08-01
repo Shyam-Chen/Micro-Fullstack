@@ -2,13 +2,10 @@
   "name": "mod-angular",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "serve": "ng serve --disable-host-check --port 8003 --live-reload false",
     "build": "ng build",
-    "serve": "ng serve --disable-host-check --port 8003 --live-reload false"
+    "lint": "ng lint",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

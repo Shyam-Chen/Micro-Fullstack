@@ -12,8 +12,8 @@
   "scripts": {
     "serve": "rescripts start",
     "build": "rescripts build && mv build dist",
-    "test": "rescripts test",
-    "eject": "rescripts eject"
+    "lint": "echo \"Error: no lint specified\" && exit 1",
+    "test": "rescripts test"
   },
   "browserslist": {
     "production": [

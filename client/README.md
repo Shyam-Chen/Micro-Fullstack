@@ -41,6 +41,9 @@ $ yarn bootstrap
 
 $ yarn serve
 $ yarn build
+
+$ yarn lint
+$ yarn test
 ```
 
 Visit [http://localhost:8000/](http://localhost:8000/).

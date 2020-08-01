@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: List
+items:
+  - apiVersion: serving.knative.dev/v1
+    kind: Service
+    metadata:
+      name: shell
+      namespace: micro
+    spec:
+      template:
+        metadata:
+          name: app-shell
+          annotations:
+            autoscaling.knative.dev/minScale: '1'
+            autoscaling.knative.dev/maxScale: '5'
+        spec:
+          containers:
+            - image: docker.io/<DOCKER_ID_USER>/shell:<IMAGE_TAG>
+  - apiVersion: serving.knative.dev/v1
+    kind: Service
+    metadata:
+      name: vue
+      namespace: micro
+    spec:
+      template:
+        metadata:
+          name: mod-vue
+          annotations:
+            autoscaling.knative.dev/minScale: '1'
+            autoscaling.knative.dev/maxScale: '5'
+        spec:
+          containers:
+            - image: docker.io/<DOCKER_ID_USER>/vue:<IMAGE_TAG>
+  - apiVersion: serving.knative.dev/v1
+    kind: Service
+    metadata:
+      name: react
+      namespace: micro
+    spec:
+      template:
+        metadata:
+          name: mod-react
+          annotations:
+            autoscaling.knative.dev/minScale: '1'
+            autoscaling.knative.dev/maxScale: '5'
+        spec:
+          containers:
+            - image: docker.io/<DOCKER_ID_USER>/react:<IMAGE_TAG>
+  - apiVersion: serving.knative.dev/v1
+    kind: Service
+    metadata:
+      name: angular
+      namespace: micro
+    spec:
+      template:
+        metadata:
+          name: mod-angular
+          annotations:
+            autoscaling.knative.dev/minScale: '1'
+            autoscaling.knative.dev/maxScale: '5'
+        spec:
+          containers:
+            - image: docker.io/<DOCKER_ID_USER>/angular:<IMAGE_TAG>
+  - apiVersion: serving.knative.dev/v1
+    kind: Service
+    metadata:
+      name: svelte
+      namespace: micro
+    spec:
+      template:
+        metadata:
+          name: mod-svelte
+          annotations:
+            autoscaling.knative.dev/minScale: '1'
+            autoscaling.knative.dev/maxScale: '5'
+        spec:
+          containers:
+            - image: docker.io/<DOCKER_ID_USER>/svelte:<IMAGE_TAG>

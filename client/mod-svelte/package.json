@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack-dev-server",
-    "build": "webpack --env.prod"
+    "build": "webpack --env.prod",
+    "lint": "echo \"Error: no lint specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
   "dependencies": {
