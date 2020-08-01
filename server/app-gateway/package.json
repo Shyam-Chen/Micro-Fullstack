@@ -2,7 +2,7 @@
   "name": "app-gateway",
   "version": "1.0.0",
   "scripts": {
-    "serve": "kong start"
+    "serve": "caddy run"
   },
   "license": "MIT"
 }
