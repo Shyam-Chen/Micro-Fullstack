@@ -13,6 +13,10 @@
 
 ## Prerequisites
 
+- caddy
+- docker
+- minishift
+
 ## Directory Structure
 
 ```sh
@@ -46,7 +50,7 @@ $ yarn lint
 $ yarn test
 ```
 
-Visit [http://localhost:8000/](http://localhost:8000/).
+Visit [http://localhost:8000](http://localhost:8000).
 
 `app-shell` is listening on port 8000.<br>
 `mod-vue` is listening on port 8001.<br>
@@ -59,8 +63,11 @@ Visit [http://localhost:8000/](http://localhost:8000/).
 caddy
 
 ```sh
+# /Micro-Fullstack/client
 $ caddy run
 ```
+
+Visit [https://localhost:8000](https://localhost:8000).
 
 ## Application Containerization
 
@@ -70,19 +77,20 @@ TODO: Push images to Docker Hub
 
 ```sh
 $ docker login
+```
 
+```sh
+$ yarn build
 $ docker-compose build
 $ docker-compose push
 ```
 
 ## Production Ready
 
-minikube + knative
+minishift + knative
 
 TODO: Pull images from Docker Hub
 
 ```sh
-$ minikube start
-$ kubectl apply --filename service.yml
-$ kubectl get services
+$
 ```
