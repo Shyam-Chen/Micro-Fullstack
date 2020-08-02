@@ -13,6 +13,10 @@
 
 ## Prerequisites
 
+- caddy
+- docker
+- minishift
+
 ## Directory Structure
 
 ```sh
@@ -43,7 +47,7 @@ $ yarn serve
 $ yarn build
 ```
 
-`app-gateway` is listening on port 8000.<br>
+`app-gateway` is listening on port 3000.<br>
 `mod-koa` is listening on port 3001.<br>
 `mod-express` is listening on port 3002.<br>
 `mod-nest` is listening on port 3003.<br>
@@ -51,7 +55,7 @@ $ yarn build
 
 ## Previewing Locally
 
-caddy
+pm2
 
 ```sh
 $
@@ -67,7 +71,7 @@ $
 
 ## Production Ready
 
-minikube + knative
+minishift + knative
 
 ```sh
 $

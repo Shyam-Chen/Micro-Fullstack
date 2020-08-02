@@ -1,4 +1,6 @@
 :3000 {
+  respond "app-gateway"
+
   @koa {
     header Host localhost:3001
   }
