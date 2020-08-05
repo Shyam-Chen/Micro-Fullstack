@@ -2,7 +2,6 @@
 
 ### Table of Contents
 
-- Prerequisites
 - [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
 - Previewing Locally
@@ -10,12 +9,6 @@
 - Production Ready
 
 ---
-
-## Prerequisites
-
-- caddy
-- docker
-- minishift
 
 ## Directory Structure
 
@@ -87,7 +80,7 @@ $ docker-compose push
 
 ## Production Ready
 
-minishift + knative
+minikube + knative + kourier
 
 TODO: Pull images from Docker Hub
 

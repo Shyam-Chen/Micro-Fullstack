@@ -13,7 +13,7 @@ Here's how to make microservices development quick and easy:
 - Build applications with the best back-end frameworks, such as Koa, Express, Nest and Fastify
 - Use a effective and pragmatic test-driven development approach with Jest
 - Containerize microservice-based applications with Docker and Docker Compose
-- Deploy, serve, and scale applications with the Knative Serving module on Minishift
+- Deploy, serve, and scale applications with the Knative Serving module
 
 ## Micro Frontends
 
@@ -22,3 +22,62 @@ See [client folder](./client).
 ## Micro Backends
 
 See [server folder](./server).
+
+## Environment Settings
+
+- git `git --version`
+- node `node -v`
+- yarn `yarn -v`
+- caddy `caddy version`
+- docker `docker -v`
+- docker-compose `docker-compose -v`
+- minikube `minikube version`
+- kubectl `kubectl version --client --short`
+- watch `watch -v`
+
+```sh
+$ minikube start
+$ kubectl version --short
+```
+
+```sh
+# Install Custom Resource Definitions
+$ kubectl apply --selector knative.dev/crd-install=true \
+    --filename https://github.com/knative/serving/releases/download/v0.16.0/serving-crds.yaml
+
+$ kubectl api-resources --api-group='serving.knative.dev'
+# NAME             SHORTNAMES      APIGROUP              NAMESPACED   KIND
+# configurations   config,cfg      serving.knative.dev   true         Configuration
+# revisions        rev             serving.knative.dev   true         Revision
+# routes           rt              serving.knative.dev   true         Route
+# services         kservice,ksvc   serving.knative.dev   true         Service
+```
+
+```sh
+# Install Knative Serving
+$ kubectl apply --filename https://github.com/knative/serving/releases/download/v0.16.0/serving-core.yaml
+
+# Knative Serving pods
+$ watch "kubectl get pods -n knative-serving"
+```
+
+```sh
+# Install Kourier
+$ kubectl apply --filename https://github.com/knative/net-kourier/releases/download/v0.16.0/kourier.yaml
+
+# Kourier pods
+$ watch "kubectl get pods -n kourier-system"
+```
+
+```sh
+# Configure Knative serving to use Kourier as the ingress
+$ kubectl patch configmap/config-network \
+    -n knative-serving \
+    --type merge \
+    -p '{"data":{"ingress.class":"kourier.ingress.networking.knative.dev"}}'
+```
+
+```sh
+# Configure Kubernetes namespace
+$ kubectl create namespace micro
+```
