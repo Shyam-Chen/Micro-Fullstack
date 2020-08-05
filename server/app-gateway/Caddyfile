@@ -1,6 +1,4 @@
 :3000 {
-  respond "app-gateway"
-
   @koa {
     header Host localhost:3001
   }
@@ -17,8 +15,11 @@
     header Host localhost:3004
   }
 
-  reverse_proxy @koa localhost:3001
-  reverse_proxy @express localhost:3002
-  reverse_proxy @nest localhost:3003
-  reverse_proxy @fastify localhost:3004
+  route {
+    reverse_proxy @koa localhost:3001
+    reverse_proxy @express localhost:3002
+    reverse_proxy @nest localhost:3003
+    reverse_proxy @fastify localhost:3004
+    respond "app-gateway"
+  }
 }
