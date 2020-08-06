@@ -14,3 +14,5 @@ fastify.listen(3004, 'localhost', (err, address) => {
   console.log('🚀  App: Bootstrap Succeeded');
   console.log(`🚀  Host: ${address}`);
 });
+
+process.on('SIGINT', () => process.exit(0));

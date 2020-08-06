@@ -19,3 +19,5 @@ server.listen(3001, 'localhost', () => {
   console.log('🚀  App: Bootstrap Succeeded');
   console.log(`🚀  Host: http://${'localhost'}:${'3001'}`);
 });
+
+process.on('SIGINT', () => process.exit(0));
