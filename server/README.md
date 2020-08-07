@@ -48,7 +48,7 @@ $ yarn build
 
 ## Previewing Locally
 
-pm2
+caddy
 
 ```sh
 $
@@ -56,7 +56,7 @@ $
 
 ## Application Containerization
 
-docker + docker-compose
+docker
 
 ```sh
 $
@@ -64,7 +64,7 @@ $
 
 ## Production Ready
 
-minikube + knative + kourier
+knative
 
 ```sh
 $

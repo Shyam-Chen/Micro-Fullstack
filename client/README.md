@@ -64,7 +64,7 @@ Visit [https://localhost:8000](https://localhost:8000).
 
 ## Application Containerization
 
-docker + docker-compose
+docker
 
 TODO: Push images to Docker Hub
 
@@ -80,7 +80,7 @@ $ docker-compose push
 
 ## Production Ready
 
-minikube + knative + kourier
+knative
 
 TODO: Pull images from Docker Hub
 
