@@ -38,9 +38,6 @@ $ yarn bootstrap
 
 $ yarn serve
 $ yarn build
-
-$ yarn lint
-$ yarn test
 ```
 
 Visit [http://localhost:8000](http://localhost:8000).
@@ -50,6 +47,15 @@ Visit [http://localhost:8000](http://localhost:8000).
 `mod-react` is listening on port 8002.<br>
 `mod-angular` is listening on port 8003.<br>
 `mod-svelte` is listening on port 8004.
+
+## Testing
+
+jest
+
+```sh
+$ yarn lint
+$ yarn test
+```
 
 ## Previewing Locally
 

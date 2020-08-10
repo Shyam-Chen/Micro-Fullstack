@@ -1,6 +1,6 @@
 # Micro Fullstack
 
-:maple_leaf: ECMAScript Microservices Development: Build, test, deploy, and scale microservices in ECMAScript.
+:maple_leaf: **ECMAScript Microservices Development**: Build, test, deploy, and scale microservices in ECMAScript.
 
 Here's how to make microservices development quick and easy:
 

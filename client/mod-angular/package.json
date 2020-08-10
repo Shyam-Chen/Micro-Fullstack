@@ -4,8 +4,8 @@
   "scripts": {
     "serve": "ng serve --disable-host-check --port 8003 --live-reload false",
     "build": "ng build",
-    "lint": "ng lint",
-    "test": "ng test"
+    "lint": "echo \"Error: no lint specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
   "dependencies": {

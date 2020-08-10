@@ -15,6 +15,6 @@
     "serve": "onchange -i 'src/**/*' -- yarn build",
     "build": "asc src/index.ts -b dist/as-api.wasm -t dist/as-api.wat --sourceMap --optimize",
     "lint": "echo \"Error: no lint specified\" && exit 1",
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

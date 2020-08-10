@@ -46,6 +46,15 @@ $ yarn build
 `mod-nest` is listening on port 3003.<br>
 `mod-fastify` is listening on port 3004.
 
+## Testing
+
+jest
+
+```sh
+$ yarn lint
+$ yarn test
+```
+
 ## Previewing Locally
 
 caddy
