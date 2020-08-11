@@ -60,7 +60,8 @@ $ yarn test
 caddy
 
 ```sh
-$
+$ caddy run -config ./app-gateway/Caddyfile
+$ pm2 start ecosystem.config.js
 ```
 
 ## Application Containerization

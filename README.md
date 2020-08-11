@@ -49,6 +49,7 @@ See [server folder](./server).
 - git `git --version`
 - node `node -v`
 - yarn `yarn -v`
+- pm2 `pm2 -v`
 - caddy `caddy version`
 - docker `docker -v`
 - docker-compose `docker-compose -v`
