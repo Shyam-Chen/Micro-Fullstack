@@ -2,13 +2,35 @@
 
 ### Table of Contents
 
-- [Directory Structure](#directory-structure)
 - [Getting Started](#getting-started)
-- Previewing Locally
-- Application Containerization
-- Production Ready
+- [Directory Structure](#directory-structure)
+- [Application Testing](#application-testing)
+- [Previewing Locally](#previewing-locally)
+- [Application Containerization](#application-containerization)
+- [Production Ready](#production-ready)
 
 ---
+
+## Getting Started
+
+```sh
+$ git clone https://github.com/Shyam-Chen/Micro-Fullstack
+$ cd Micro-Fullstack
+
+$ cd client
+$ yarn install
+$ yarn bootstrap
+
+$ yarn serve
+```
+
+Visit [http://localhost:8000](http://localhost:8000).
+
+`app-shell` is listening on port 8000.<br>
+`mod-vue` is listening on port 8001.<br>
+`mod-react` is listening on port 8002.<br>
+`mod-angular` is listening on port 8003.<br>
+`mod-svelte` is listening on port 8004.
 
 ## Directory Structure
 
@@ -26,29 +48,7 @@ mod-angular
 mod-svelte
 ```
 
-## Getting Started
-
-```sh
-$ git clone https://github.com/Shyam-Chen/Micro-Fullstack
-$ cd Micro-Fullstack
-
-$ cd client
-$ yarn install
-$ yarn bootstrap
-
-$ yarn serve
-$ yarn build
-```
-
-Visit [http://localhost:8000](http://localhost:8000).
-
-`app-shell` is listening on port 8000.<br>
-`mod-vue` is listening on port 8001.<br>
-`mod-react` is listening on port 8002.<br>
-`mod-angular` is listening on port 8003.<br>
-`mod-svelte` is listening on port 8004.
-
-## Testing
+## Application Testing
 
 jest
 
@@ -63,6 +63,7 @@ caddy
 
 ```sh
 # /Micro-Fullstack/client
+$ yarn build
 $ caddy run
 ```
 

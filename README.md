@@ -7,10 +7,10 @@ Here's how to make microservices development quick and easy:
 - Create microservice applications using [JavaScript][javascript] and [TypeScript][typescript]
 - Register multiple single-page applications on a single page with [Single SPA][single spa] and [QianKun][qiankun]
 - Craft reusable components with the [Web Components][web components] specifications using [Svelte][svelte]
-- Build applications with the best front-end frameworks, such as [Vue][vue], [React][react], [Angular][angular], and [Svelte][svelte]
+- Build applications with popular front-end frameworks like [Vue][vue], [React][react], [Angular][angular], and [Svelte][svelte]
 - Design a service gateway and service registry with the [Caddy][caddy] API gateway
 - Write, load, and run portable binary code with [WebAssembly][webassembly] using [AssemblyScript][assemblyscript]
-- Build applications with the best back-end frameworks, such as [Koa][koa], [Express][express], [Nest][nest], and [Fastify][fastify]
+- Build applications with popular back-end frameworks like [Koa][koa], [Express][express], [Nest][nest], and [Fastify][fastify]
 - Use a test-driven development approach for microservices with [Jest][jest]
 - Static file serving, reverse proxy, and automatic HTTPS with [Caddy][caddy]
 - Containerize microservice-based applications with [Docker][docker]
@@ -55,6 +55,7 @@ See [server folder](./server).
 - docker-compose `docker-compose -v`
 - minikube `minikube version`
 - kubectl `kubectl version --client --short`
+- httpie `http --version`
 - watch `watch -v`
 
 ```sh
