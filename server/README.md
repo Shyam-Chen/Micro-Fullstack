@@ -8,6 +8,7 @@
 - [Previewing Locally](#previewing-locally)
 - [Application Containerization](#application-containerization)
 - [Production Ready](#production-ready)
+- [Tasks and Pipelines](#tasks-and-pipelines)
 
 ---
 
@@ -34,8 +35,17 @@ $ yarn serve
 $ http :3000
 # app-gateway
 
-$ http :3001 'Host: localhost:3001'
+$ http :3000 'Host: localhost:3001'
 # mod-koa
+
+$ http :3000 'Host: localhost:3002'
+# mod-express
+
+$ http :3000 'Host: localhost:3003'
+# mod-nest
+
+$ http :3000 'Host: localhost:3004'
+# mod-fastify
 ```
 
 ## Directory Structure
@@ -84,6 +94,14 @@ $
 ## Production Ready
 
 knative
+
+```sh
+$
+```
+
+## Tasks and Pipelines
+
+tekton
 
 ```sh
 $

@@ -8,6 +8,7 @@
 - [Previewing Locally](#previewing-locally)
 - [Application Containerization](#application-containerization)
 - [Production Ready](#production-ready)
+- [Tasks and Pipelines](#tasks-and-pipelines)
 
 ---
 
@@ -90,6 +91,14 @@ $ docker-compose push
 knative
 
 TODO: Pull images from Docker Hub
+
+```sh
+$
+```
+
+## Tasks and Pipelines
+
+tekton
 
 ```sh
 $
