@@ -14,8 +14,7 @@ Here's how to make microservices development quick and easy:
 - Use a test-driven development approach for microservices with [Jest][jest]
 - Static file serving, reverse proxy, and automatic HTTPS with [Caddy][caddy]
 - Containerize microservice-based applications with [Docker][docker]
-- Deploy, serve, and scale container-based applications with [Knative][knative]
-- Set up a continuous integration and delivery workflow with [Tekton][tekton]
+- Deploy, serve, and scale container-based applications with [Knative][knative] on [OpenShift][openshift]
 
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [typescript]: https://www.typescriptlang.org/
@@ -36,7 +35,7 @@ Here's how to make microservices development quick and easy:
 [jest]: https://jestjs.io/
 [docker]: https://www.docker.com/
 [knative]: https://knative.dev/
-[tekton]: https://tekton.dev/
+[openshift]: https://www.openshift.com/
 
 ## Micro Frontends
 
@@ -57,7 +56,7 @@ See [server folder](./server).
 - docker-compose `docker-compose -v`
 - minikube `minikube version`
 - kubectl `kubectl version --client --short`
-- helm `helm version`
+- helm `helm version --short`
 - httpie `http --version`
 - watch `watch -v`
 

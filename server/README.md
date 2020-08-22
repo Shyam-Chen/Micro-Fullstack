@@ -8,7 +8,6 @@
 - [Previewing Locally](#previewing-locally)
 - [Application Containerization](#application-containerization)
 - [Production Ready](#production-ready)
-- [Tasks and Pipelines](#tasks-and-pipelines)
 
 ---
 
@@ -69,7 +68,6 @@ mod-fastify
 jest
 
 ```sh
-$ yarn lint
 $ yarn test
 ```
 
@@ -94,14 +92,6 @@ $
 ## Production Ready
 
 knative
-
-```sh
-$
-```
-
-## Tasks and Pipelines
-
-tekton
 
 ```sh
 $

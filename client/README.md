@@ -8,7 +8,6 @@
 - [Previewing Locally](#previewing-locally)
 - [Application Containerization](#application-containerization)
 - [Production Ready](#production-ready)
-- [Tasks and Pipelines](#tasks-and-pipelines)
 
 ---
 
@@ -54,7 +53,6 @@ mod-svelte
 jest
 
 ```sh
-$ yarn lint
 $ yarn test
 ```
 
@@ -93,13 +91,6 @@ knative
 TODO: Pull images from Docker Hub
 
 ```sh
-$
-```
-
-## Tasks and Pipelines
-
-tekton
-
-```sh
+$ minikube start
 $
 ```
