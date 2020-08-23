@@ -1,4 +1,5 @@
 import path from 'path';
+import { eslint } from 'rollup-plugin-eslint';
 import svelte from 'rollup-plugin-svelte';
 import { getBabelOutputPlugin } from '@rollup/plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
@@ -15,6 +16,7 @@ const cpnConfig = (file) => ({
     sourcemap: true,
   },
   plugins: [
+    eslint(),
     svelte({
       customElement: true,
       tag: null,
