@@ -20,10 +20,10 @@ export default function () {
 
   return (
     <>
-      <h2 className="app-nav-item" style={{ borderColor: 'green' }}>
+      <h2 class="app-nav-item" style={{ borderColor: 'green' }}>
         About
       </h2>
-      <app-footer title={'Good 2'} ref={onGood}></app-footer>
+      <app-footer title={'Good 123'} ref={onGood}></app-footer>
     </>
   );
 }
