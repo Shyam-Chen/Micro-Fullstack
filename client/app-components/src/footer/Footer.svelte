@@ -9,7 +9,7 @@
 
   const dispatch = (name, detail) => {
     svelteDispatch(name, detail);
-    component.dispatchEvent && component.dispatchEvent(new CustomEvent(name, { detail }));
+    component?.dispatchEvent(new CustomEvent(name, { detail }));
   };
 
   function sayGood() {

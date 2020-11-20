@@ -9,6 +9,7 @@ module.exports = (api) => {
     ],
     plugins: [
       '@babel/plugin-transform-runtime',
+      '@babel/plugin-syntax-optional-chaining'
     ],
   };
 };
