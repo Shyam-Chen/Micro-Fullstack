@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "mbe",
   "version": "1.0.0",
   "scripts": {
     "bootstrap": "lerna bootstrap",

@@ -38,11 +38,19 @@ Here's how to make microservices development quick and easy:
 
 ## Micro Frontends
 
-See [client folder](./client).
+See [mfe folder](./mfe).
 
 ## Micro Backends
 
-See [server folder](./server).
+See [mbe folder](./mbe).
+
+## End-to-End Testing
+
+See [e2e folder](./e2e).
+
+## Infrastructure as Code
+
+See [iac folder](./iac).
 
 ## Environment Settings
 
@@ -86,3 +94,21 @@ $ kubectl patch configmap/config-network \
 # Knative Serving pods
 $ watch "kubectl get pods -n knative-serving"
 ```
+
+## Credits
+
+- Group 1:
+  - [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
+  - [React-Starter](https://github.com/Shyam-Chen/React-Starter)
+  - [Angular-Starter](https://github.com/Shyam-Chen/Angular-Starter)
+  - [Svelte-Starter](https://github.com/Shyam-Chen/Svelte-Starter)
+- Group 2:
+  - [Koa-Starter](https://github.com/Shyam-Chen/Koa-Starter)
+  - [Express-Starter](https://github.com/Shyam-Chen/Express-Starter)
+  - [Nest-Starter](https://github.com/Shyam-Chen/Nest-Starter)
+  - [Fastify-Starter](https://github.com/Shyam-Chen/Fastify-Starter)
+- Group 3:
+  - [Component-Starter](https://github.com/Shyam-Chen/Component-Starter)
+  - [Assembly-Starter](https://github.com/Shyam-Chen/Assembly-Starter)
+  - [Playwright-Starter](https://github.com/Shyam-Chen/Playwright-Starter)
+  - [Pulumi-Starter](https://github.com/Shyam-Chen/Pulumi-Starter)

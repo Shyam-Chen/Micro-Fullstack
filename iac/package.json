@@ -1,5 +1,5 @@
 {
-  "name": "infra",
+  "name": "iac",
   "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^10.0.0"
