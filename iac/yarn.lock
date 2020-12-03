@@ -62,7 +62,7 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/kubernetes@^2.0.0", "@pulumi/kubernetes@latest":
+"@pulumi/kubernetes@^2.0.0":
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/@pulumi/kubernetes/-/kubernetes-2.6.1.tgz#a03b4beda502f366f160e023d43075763770964e"
   integrity sha512-budkNG8mEPyHnw8NWZ4tS/Mmp0NjVoe6LgmxFiM1K4L5dsSsdRtlBi3P/WsBDk0ayGdvICmEecnIIVIKjbkhjQ==
@@ -76,15 +76,7 @@
     shell-quote "^1.6.1"
     tmp "^0.0.33"
 
-"@pulumi/kubernetesx@^0.1.1":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@pulumi/kubernetesx/-/kubernetesx-0.1.3.tgz#c8442544e771b61df184011df0e8e21555d726c4"
-  integrity sha512-7x4O5WlxUYutGuOuiDJLPO/aKTh0yKQCSy2d/ypnpnV61HFq57hFvh2z5TZtOVZCOxzz4CVBWDsa6XXsfmApSQ==
-  dependencies:
-    "@pulumi/kubernetes" latest
-    "@pulumi/pulumi" latest
-
-"@pulumi/pulumi@^2.0.0", "@pulumi/pulumi@latest":
+"@pulumi/pulumi@^2.0.0":
   version "2.11.2"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.11.2.tgz#06073f772d6fdbc8b1b4975f89c47840f74f9a20"
   integrity sha512-Oeif9ZhhxXu+NaMDR9bUeS/LrAZ/rMyMv6zj/7yyO1dWqk49KctcyNM3EL4HylN4EkfRptM52M4IVs6WrkVoIA==

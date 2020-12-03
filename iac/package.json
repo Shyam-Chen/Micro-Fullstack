@@ -1,12 +1,12 @@
 {
   "name": "iac",
   "version": "1.0.0",
-  "devDependencies": {
-    "@types/node": "^10.0.0"
-  },
+  "private": true,
   "dependencies": {
     "@pulumi/pulumi": "^2.0.0",
-    "@pulumi/kubernetes": "^2.0.0",
-    "@pulumi/kubernetesx": "^0.1.1"
+    "@pulumi/kubernetes": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.0"
   }
 }

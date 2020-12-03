@@ -1,5 +1,6 @@
 import * as k8s from '@pulumi/kubernetes';
-import * as kx from '@pulumi/kubernetesx';
+
+// import * as serving from './serving';
 
 const appLabels = { app: 'nginx' };
 
@@ -13,5 +14,7 @@ const deployment = new k8s.apps.v1.Deployment('nginx', {
     },
   },
 });
+
+// new serving.Instance();
 
 export const name = deployment.metadata.name;
