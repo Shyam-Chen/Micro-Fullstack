@@ -2,6 +2,9 @@
   "name": "iac",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "up": "pulumi up src -C"
+  },
   "dependencies": {
     "@pulumi/pulumi": "^2.0.0",
     "@pulumi/kubernetes": "^2.0.0"
