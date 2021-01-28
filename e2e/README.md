@@ -1,13 +1,15 @@
 # End-to-End Testing
 
-## UI Testing
+## GUI Testing
 
-`ui/**/*.spec.js`
+Automated web-based graphical user interface testing:
 
-Benchmark: `ui/**/*.meas.js`
+  - Specification: `gui/**/*.spec.js`
+  - Benchmark: `gui/**/*.meas.js`
 
 ## API Testing
 
-`api/**/*.spec.js`
+Automated application programming interface Testing:
 
-Benchmark: `api/**/*.meas.js`
+  - Specification: `api/**/*.spec.js`
+  - Benchmark: `api/**/*.meas.js`
