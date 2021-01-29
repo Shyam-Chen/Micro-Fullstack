@@ -1,0 +1,1 @@
+import lighthouse from 'lighthouse';

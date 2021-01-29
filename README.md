@@ -38,25 +38,25 @@ Here's how to make microservices development quick and easy:
 
 ## Micro Frontends
 
-See [mfe folder](./mfe).
+See [mfe](./mfe).
 
 ## Micro Backends
 
-See [mbe folder](./mbe).
+See [mbe](./mbe).
 
 ## End-to-End Testing
 
-See [e2e folder](./e2e).
+See [e2e](./e2e).
 
 ## Infrastructure as Code
 
-See [iac folder](./iac).
+See [iac](./iac).
 
 ## Environment Settings
 
 - git `git --version`
 - node `node -v`
-- yarn `yarn -v`
+- pnpm `pnpm -v`
 - pm2 `pm2 -v`
 - caddy `caddy version`
 - docker `docker -v`
