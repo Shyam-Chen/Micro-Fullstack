@@ -94,3 +94,17 @@ TODO: Pull images from Docker Hub
 $ minikube start
 $
 ```
+
+## Domain name
+
+For example:
+
+- `example.com` (`app-shell`, `setDefaultMountApp('/app')`)
+  - `example.com/app` (`mod-vue`, Home)
+  - `example.com/auth` (`mod-react`, Auth)
+  - `example.com/account` (`mod-angular`, Account)
+  - `example.com/product` (`mod-svelte`, Product)
+- `auth.example.com` (`mod-react`, Auth)
+- `account.example.com` (`mod-angular`, Account)
+- `product.example.com` (`mod-svelte`, Product)
+- (`app-components`, Common)
