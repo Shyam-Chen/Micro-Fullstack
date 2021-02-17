@@ -100,10 +100,11 @@ $
 For example:
 
 - `example.com` (`app-shell`, `setDefaultMountApp('/app')`)
-  - `example.com/app` (`mod-vue`, Home)
+  - `example.com/app` (`mod-vue`, App)
   - `example.com/auth` (`mod-react`, Auth)
   - `example.com/account` (`mod-angular`, Account)
   - `example.com/product` (`mod-svelte`, Product)
+- `app.example.com` (`mod-vue`, App)
 - `auth.example.com` (`mod-react`, Auth)
 - `account.example.com` (`mod-angular`, Account)
 - `product.example.com` (`mod-svelte`, Product)

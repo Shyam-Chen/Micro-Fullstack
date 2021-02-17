@@ -95,19 +95,19 @@ $ kubectl patch configmap/config-network \
 $ watch "kubectl get pods -n knative-serving"
 ```
 
-## Credits
+## Repositories
 
-- Group 1:
+- Client-side:
   - [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
   - [React-Starter](https://github.com/Shyam-Chen/React-Starter)
   - [Angular-Starter](https://github.com/Shyam-Chen/Angular-Starter)
   - [Svelte-Starter](https://github.com/Shyam-Chen/Svelte-Starter)
-- Group 2:
+- Server-side:
   - [Koa-Starter](https://github.com/Shyam-Chen/Koa-Starter)
   - [Express-Starter](https://github.com/Shyam-Chen/Express-Starter)
   - [Nest-Starter](https://github.com/Shyam-Chen/Nest-Starter)
   - [Fastify-Starter](https://github.com/Shyam-Chen/Fastify-Starter)
-- Group 3:
+- Utilities:
   - [Component-Starter](https://github.com/Shyam-Chen/Component-Starter)
   - [Assembly-Starter](https://github.com/Shyam-Chen/Assembly-Starter)
   - [Playwright-Starter](https://github.com/Shyam-Chen/Playwright-Starter)
