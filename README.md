@@ -15,6 +15,7 @@ Here's how to make microservices development quick and easy:
 - Static file serving, reverse proxy, and automatic HTTPS with [Caddy][caddy]
 - Containerize microservice-based applications with [Docker][docker]
 - Deploy, serve, and scale container-based applications with [Knative][knative]
+- Build progressive web applications with [Workbox][workbox]
 
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [typescript]: https://www.typescriptlang.org/
@@ -35,80 +36,32 @@ Here's how to make microservices development quick and easy:
 [jest]: https://jestjs.io/
 [docker]: https://www.docker.com/
 [knative]: https://knative.dev/
+[workbox]: https://developers.google.com/web/tools/workbox
 
-## Micro Frontends
+## Getting Started
 
-See [mfe](./mfe).
+| Micro Frontends     | Micro Backends      | End-to-End Testing  | Infrastructure as Code |
+| ------------------- | ------------------- | ------------------- | ---------------------- |
+| See [./mfe](./mfe). | See [./mbe](./mbe). | See [./e2e](./e2e). | See [./iac](./iac).    |
 
-## Micro Backends
+## Relationship Repositories
 
-See [mbe](./mbe).
+| Client-side                        | Server-side                        | Utilities                                |
+| ---------------------------------- | ---------------------------------- | ---------------------------------------- |
+| [Vue-Starter][vue-starter]         | [Koa-Starter][Koa-Starter]         | [Component-Starter][Component-Starter]   |
+| [React-Starter][react-starter]     | [Express-Starter][Express-Starter] | [Assembly-Starter][Assembly-Starter]     |
+| [Angular-Starter][angular-starter] | [Nest-Starter][Nest-Starter]       | [Playwright-Starter][Playwright-Starter] |
+| [Svelte-Starter][svelte-starter]   | [Fastify-Starter][Fastify-Starter] | [Pulumi-Starter][Pulumi-Starter]         |
 
-## End-to-End Testing
-
-See [e2e](./e2e).
-
-## Infrastructure as Code
-
-See [iac](./iac).
-
-## Environment Settings
-
-- git `git --version`
-- node `node -v`
-- pnpm `pnpm -v`
-- pm2 `pm2 -v`
-- caddy `caddy version`
-- docker `docker -v`
-- docker-compose `docker-compose -v`
-- minikube `minikube version`
-- kubectl `kubectl version --client --short`
-- httpie `http --version`
-- watch `watch -v`
-
-```sh
-$ minikube start
-$ kubectl version --short
-```
-
-```sh
-# Install Knative Serving
-$ kubectl apply -f https://github.com/knative/serving/releases/download/v0.17.0/serving-crds.yaml
-$ kubectl apply -f https://github.com/knative/serving/releases/download/v0.17.0/serving-core.yaml
-```
-
-```sh
-# Install Kourier
-$ kubectl apply -f https://github.com/knative/net-kourier/releases/download/v0.17.0/kourier.yaml
-```
-
-```sh
-# Configure Knative Serving
-$ kubectl patch configmap/config-network \
-    -n knative-serving \
-    --type merge \
-    -p '{"data":{"ingress.class":"kourier.ingress.networking.knative.dev"}}'
-```
-
-```sh
-# Knative Serving pods
-$ watch "kubectl get pods -n knative-serving"
-```
-
-## Repositories
-
-- Client-side:
-  - [Vue-Starter](https://github.com/Shyam-Chen/Vue-Starter)
-  - [React-Starter](https://github.com/Shyam-Chen/React-Starter)
-  - [Angular-Starter](https://github.com/Shyam-Chen/Angular-Starter)
-  - [Svelte-Starter](https://github.com/Shyam-Chen/Svelte-Starter)
-- Server-side:
-  - [Koa-Starter](https://github.com/Shyam-Chen/Koa-Starter)
-  - [Express-Starter](https://github.com/Shyam-Chen/Express-Starter)
-  - [Nest-Starter](https://github.com/Shyam-Chen/Nest-Starter)
-  - [Fastify-Starter](https://github.com/Shyam-Chen/Fastify-Starter)
-- Utilities:
-  - [Component-Starter](https://github.com/Shyam-Chen/Component-Starter)
-  - [Assembly-Starter](https://github.com/Shyam-Chen/Assembly-Starter)
-  - [Playwright-Starter](https://github.com/Shyam-Chen/Playwright-Starter)
-  - [Pulumi-Starter](https://github.com/Shyam-Chen/Pulumi-Starter)
+[Vue-Starter]: https://github.com/Shyam-Chen/Vue-Starter
+[React-Starter]: https://github.com/Shyam-Chen/React-Starter
+[Angular-Starter]: https://github.com/Shyam-Chen/Angular-Starter
+[Svelte-Starter]: https://github.com/Shyam-Chen/Svelte-Starter
+[Koa-Starter]: https://github.com/Shyam-Chen/Koa-Starter
+[Express-Starter]: https://github.com/Shyam-Chen/Express-Starter
+[Nest-Starter]: https://github.com/Shyam-Chen/Nest-Starter
+[Fastify-Starter]: https://github.com/Shyam-Chen/Fastify-Starter
+[Component-Starter]: https://github.com/Shyam-Chen/Component-Starter
+[Assembly-Starter]: https://github.com/Shyam-Chen/Assembly-Starter
+[Playwright-Starter]: https://github.com/Shyam-Chen/Playwright-Starter
+[Pulumi-Starter]: https://github.com/Shyam-Chen/Pulumi-Starter
