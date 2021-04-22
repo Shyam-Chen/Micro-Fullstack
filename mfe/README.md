@@ -109,3 +109,16 @@ For example:
 - `account.example.com` (`mod-angular`, Account)
 - `product.example.com` (`mod-svelte`, Product)
 - (`app-components`, Common)
+
+TODO: Without `setDefaultMountApp('/app')`:
+
+- `example.com` (`app-shell`, Render in Vue)
+  - `example.com/auth` (`mod-vue`, Auth)
+  - `example.com/account` (`mod-react`, Account)
+  - `example.com/product` (`mod-angular`, Product)
+  - `example.com/payment` (`mod-svelte`, Payment)
+- `auth.example.com` (`mod-vue`, Auth)
+- `account.example.com` (`mod-react`, Account)
+- `product.example.com` (`mod-angular`, Product)
+- `payment.example.com` (`mod-svelte`, Payment)
+- (`app-components`, Common)
