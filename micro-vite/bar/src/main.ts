@@ -15,19 +15,13 @@ function render(props: any) {
 
 renderWithQiankun({
   mount(props) {
-    console.log('[bar] mount');
     render(props);
   },
-  bootstrap() {
-    console.log('[bar] bootstrap');
-  },
+  bootstrap() {},
   unmount(props: any) {
-    console.log('[bar] unmount');
     root.unmount();
   },
-  update(props: any) {
-    console.log('[bar] update');
-  },
+  update(props: any) {},
 });
 
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {

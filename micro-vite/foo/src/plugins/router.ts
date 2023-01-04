@@ -1,6 +1,8 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import { qiankunWindow } from 'vite-plugin-qiankun/es/helper';
 
+import NotFound from '../modules/NotFound.vue';
+
 export const history = createWebHistory(qiankunWindow.__POWERED_BY_QIANKUN__ ? '/foo' : '/');
 
 export const router = createRouter({
@@ -15,11 +17,10 @@ export const router = createRouter({
       component: () => import('../modules/Marketplace.vue'),
     },
 
-    // {
-    //   path: '/:pathMatch(.*)*',
-    //   component: () => import('~/Error.vue'),
-    //   meta: { layout: 'empty' },
-    // },
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound,
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
