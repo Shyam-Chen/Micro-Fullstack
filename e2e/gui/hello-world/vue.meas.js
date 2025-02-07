@@ -1,1 +1,0 @@
-import lighthouse from 'lighthouse';
