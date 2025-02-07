@@ -4,32 +4,25 @@
 
 Here's how to make microservices development quick and easy:
 
-- Create microservice applications using [TypeScript][typescript]
-- Register multiple single-page applications on a single page with [Garfish][garfish]
-- Design a service gateway and service registry with the [Caddy][caddy] API gateway
+- Develop microservice applications using [TypeScript][typescript]
+- Integrate multiple single-page applications on a single page with [Garfish][garfish]
+- Develop multiple micro-frontend service applications using [Vue][vue]
+- Design a service gateway and registry with [Caddy][caddy]
+- Develop multiple micro-backend service applications using [Fastify][fastify]
 - Containerize microservice-based applications with [Docker][docker]
+- Push containerized applications to [Google Artifact Registry][google-artifact-registry]
+- Deploy containerized application images to [Google Cloud Run][google-cloud-run] using their image URL
+- Automate cloud infrastructure management with [Pulumi][pulumi]
 
 [typescript]: https://www.typescriptlang.org/
 [garfish]: https://www.garfishjs.org/
-
-<!--  -->
-
-[qiankun]: https://qiankun.umijs.org/
-[web components]: https://www.webcomponents.org/
-[svelte]: https://svelte.dev/
 [vue]: https://vuejs.org/
-[react]: https://reactjs.org/
-[angular]: https://angular.io/
 [caddy]: https://caddyserver.com/
-[webassembly]: https://webassembly.org/
-[assemblyscript]: https://www.assemblyscript.org/
-[koa]: https://koajs.com/
-[express]: https://expressjs.com/
-[nest]: https://nestjs.com/
-[fastify]: https://www.fastify.io/
-[jest]: https://jestjs.io/
+[fastify]: https://fastify.dev/
 [docker]: https://www.docker.com/
-[knative]: https://knative.dev/
+[google-artifact-registry]: https://cloud.google.com/artifact-registry/docs
+[google-cloud-run]: https://cloud.google.com/run
+[pulumi]: https://www.pulumi.com/
 
 | Micro Frontends     | Micro Backends      | Infrastructure as Code |
 | ------------------- | ------------------- | ---------------------- |
