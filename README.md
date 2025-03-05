@@ -10,8 +10,6 @@ Here's how to make microservices development quick and easy:
 - Design a service gateway and registry with [Caddy][caddy]
 - Develop multiple micro-backend service applications using [Fastify][fastify]
 - Containerize microservice-based applications with [Docker][docker]
-- Push containerized applications to [Google Artifact Registry][google-artifact-registry]
-- Deploy containerized application images to [Google Cloud Run][google-cloud-run] using their image URL
 - Automate cloud infrastructure management with [Pulumi][pulumi]
 
 [typescript]: https://www.typescriptlang.org/
@@ -20,9 +18,15 @@ Here's how to make microservices development quick and easy:
 [caddy]: https://caddyserver.com/
 [fastify]: https://fastify.dev/
 [docker]: https://www.docker.com/
-[google-artifact-registry]: https://cloud.google.com/artifact-registry/docs
-[google-cloud-run]: https://cloud.google.com/run
 [pulumi]: https://www.pulumi.com/
+
+| Micro Frontends             | Micro Backends              | Infrastructure as Code  |
+| --------------------------- | --------------------------- | ----------------------- |
+| See [./clients](./clients). | See [./servers](./servers). | See [./infra](./infra). |
+
+---
+
+#### Archive
 
 | Micro Frontends     | Micro Backends      | Infrastructure as Code |
 | ------------------- | ------------------- | ---------------------- |
