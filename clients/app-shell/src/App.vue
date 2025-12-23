@@ -10,15 +10,21 @@ onMounted(() => {
     domGetter: '#sub-app',
     apps: [
       {
-        name: 'sub-foo',
-        activeWhen: '/foo',
+        name: 'sub-alpha',
+        activeWhen: '/alpha',
         entry: 'http://localhost:8001',
         sandbox: false,
       },
       // {
-      //   name: 'sub-bar',
-      //   activeWhen: '/bar',
+      //   name: 'sub-beta',
+      //   activeWhen: '/beta',
       //   entry: 'http://localhost:8002',
+      //   sandbox: false,
+      // },
+      // {
+      //   name: 'sub-gamma',
+      //   activeWhen: '/gamma',
+      //   entry: 'http://localhost:8003',
       //   sandbox: false,
       // },
     ],

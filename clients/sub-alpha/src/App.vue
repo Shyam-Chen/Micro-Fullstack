@@ -1,3 +1,3 @@
 <template>
-  <div>sub-foo</div>
+  <div>sub-alpha</div>
 </template>
