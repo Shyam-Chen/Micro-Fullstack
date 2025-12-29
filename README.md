@@ -4,11 +4,14 @@
 
 Here's how to make microservices development quick and easy:
 
+- ---------- Basic ----------
 - Develop microservice applications using [TypeScript][typescript]
 - Develop multiple micro-frontend service applications using [Vue][vue]
 - Develop multiple micro-backend service applications using [Fastify][fastify]
 - Containerize microservice-based applications with [Docker][docker]
 - Automate cloud infrastructure management with [Pulumi][pulumi]
+- ---------- Advanced ----------
+- ...
 
 [typescript]: https://www.typescriptlang.org/
 [vue]: https://vuejs.org/

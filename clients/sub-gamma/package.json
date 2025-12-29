@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@garfish/bridge-vue-v3": "1.19.7",
+    "vue": "3.6.0-beta.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.4",
+    "@vitejs/plugin-vue": "6.0.3",
+    "process-envify": "2.0.0",
+    "typescript": "5.9.3",
+    "vite": "8.0.0-beta.5",
+    "vue-tsc": "3.2.1"
+  }
+}
