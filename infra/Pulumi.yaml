@@ -1,0 +1,6 @@
+name: k8s
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+    nodeargs: --import=tsx
